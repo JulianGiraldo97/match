@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Valida_Talento_de_Servicio</fullName>
+    <active>true</active>
+    <errorConditionFormula>Mat_Servicio_de_talento__r.Mat_Talento__r.Id  &lt;&gt;  Mat_Oportunidad__r.Mat_Talento__r.Id</errorConditionFormula>
+    <errorMessage>El servicio seleccionado debe pertenecer al mismo talento asignado en la Oportunidad.</errorMessage>
+</ValidationRule>

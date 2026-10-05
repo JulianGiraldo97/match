@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Loss_Reason__c</fullName>
+    <label>Loss Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>No viable</fullName>
+                <default>false</default>
+                <label>No viable</label>
+            </value>
+            <value>
+                <fullName>Licitación</fullName>
+                <default>false</default>
+                <label>Licitación</label>
+            </value>
+            <value>
+                <fullName>Sin respuesta por parte de marca</fullName>
+                <default>false</default>
+                <label>Sin respuesta por parte de marca</label>
+            </value>
+            <value>
+                <fullName>No se activó campaña</fullName>
+                <default>false</default>
+                <label>No se activó campaña</label>
+            </value>
+            <value>
+                <fullName>Sin respuesta de talento</fullName>
+                <default>false</default>
+                <label>Sin respuesta de talento</label>
+            </value>
+            <value>
+                <fullName>Escogieron otros perfiles</fullName>
+                <default>false</default>
+                <label>Escogieron otros perfiles</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Bogotá</fullName>
+        <default>false</default>
+        <label>Bogotá</label>
+    </customValue>
+    <customValue>
+        <fullName>Cali</fullName>
+        <default>false</default>
+        <label>Cali</label>
+    </customValue>
+    <customValue>
+        <fullName>CDMX</fullName>
+        <default>false</default>
+        <label>CDMX</label>
+    </customValue>
+    <customValue>
+        <fullName>Lima</fullName>
+        <default>false</default>
+        <label>Lima</label>
+    </customValue>
+    <customValue>
+        <fullName>Medellín</fullName>
+        <default>false</default>
+        <label>Medellín</label>
+    </customValue>
+    <masterLabel>Ciudad</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

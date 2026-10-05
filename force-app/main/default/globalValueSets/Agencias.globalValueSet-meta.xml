@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Match Management</fullName>
+        <default>false</default>
+        <label>Match Management</label>
+    </customValue>
+    <customValue>
+        <fullName>Match Music</fullName>
+        <default>false</default>
+        <label>Match Music</label>
+    </customValue>
+    <customValue>
+        <fullName>Match Sports</fullName>
+        <default>false</default>
+        <label>Match Sports</label>
+    </customValue>
+    <customValue>
+        <fullName>N3xt Talent</fullName>
+        <default>false</default>
+        <label>N3xt Talent</label>
+    </customValue>
+    <customValue>
+        <fullName>Jik Creators</fullName>
+        <default>false</default>
+        <label>Jik Creators</label>
+    </customValue>
+    <masterLabel>Agencias</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Categoría --></label>
+    <name>Mat_Categoria__c</name>
+    <picklistValues>
+        <masterLabel>Amarillo</masterLabel>
+        <translation><!-- Amarillo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Morado</masterLabel>
+        <translation><!-- Morado --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Negro</masterLabel>
+        <translation><!-- Negro --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Colombia</fullName>
+        <default>false</default>
+        <label>Colombia</label>
+    </customValue>
+    <customValue>
+        <fullName>México</fullName>
+        <default>false</default>
+        <label>México</label>
+    </customValue>
+    <customValue>
+        <fullName>Perú</fullName>
+        <default>false</default>
+        <label>Perú</label>
+    </customValue>
+    <customValue>
+        <fullName>Argentina</fullName>
+        <default>false</default>
+        <label>Argentina</label>
+    </customValue>
+    <customValue>
+        <fullName>Otro</fullName>
+        <default>false</default>
+        <label>Otro</label>
+    </customValue>
+    <masterLabel>País</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

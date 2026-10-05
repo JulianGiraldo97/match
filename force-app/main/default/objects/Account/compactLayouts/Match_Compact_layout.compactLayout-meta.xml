@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Match_Compact_layout</fullName>
+    <fields>Name</fields>
+    <fields>Correo__c</fields>
+    <fields>Phone</fields>
+    <fields>Mat_Vendedor__c</fields>
+    <label>Match Compact layout</label>
+</CompactLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Servicio de talento --></label>
+    <name>Mat_Servicio_de_talento__c</name>
+    <relationshipLabel><!-- Servicios de oportunidades --></relationshipLabel>
+</CustomFieldTranslation>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Match_Servicio_de_Talento_compact</fullName>
+    <fields>Mat_Talento__c</fields>
+    <fields>Servicio__c</fields>
+    <fields>Name</fields>
+    <fields>CreatedById</fields>
+    <label>Match Servicio de Talento compact</label>
+</CompactLayout>

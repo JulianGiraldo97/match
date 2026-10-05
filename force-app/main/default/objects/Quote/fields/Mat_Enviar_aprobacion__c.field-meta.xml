@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mat_Enviar_aprobacion__c</fullName>
+    <defaultValue>false</defaultValue>
+    <label>Enviar a aprobación</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

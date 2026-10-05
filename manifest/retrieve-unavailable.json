@@ -1,0 +1,1252 @@
+{
+  "targetOrg": "matchdev",
+  "apiVersion": "68.0",
+  "retrieveId": "09SWI00000hpIYR2A2",
+  "failedFiles": [
+    {
+      "fullName": "ForecastingItem__hd.QuantityWithoutAdjustments__c",
+      "type": "CustomField",
+      "state": "Failed",
+      "error": "Entity of type 'CustomField' named 'ForecastingItem__hd.QuantityWithoutAdjustments__c' cannot be found",
+      "problemType": "Error"
+    },
+    {
+      "fullName": "Opportunity__hd.CloseDate__c",
+      "type": "CustomField",
+      "state": "Failed",
+      "error": "Entity of type 'CustomField' named 'Opportunity__hd.CloseDate__c' cannot be found",
+      "problemType": "Error"
+    },
+    {
+      "fullName": "ForecastingItem__hd.QuantityWithoutManagerAdjustment__c",
+      "type": "CustomField",
+      "state": "Failed",
+      "error": "Entity of type 'CustomField' named 'ForecastingItem__hd.QuantityWithoutManagerAdjustment__c' cannot be found",
+      "problemType": "Error"
+    },
+    {
+      "fullName": "ForecastingItem__hd.OwnerOnlyAmount__c",
+      "type": "CustomField",
+      "state": "Failed",
+      "error": "Entity of type 'CustomField' named 'ForecastingItem__hd.OwnerOnlyAmount__c' cannot be found",
+      "problemType": "Error"
+    },
+    {
+      "fullName": "ForecastingItem__hd.AmountWithoutManagerAdjustment__c",
+      "type": "CustomField",
+      "state": "Failed",
+      "error": "Entity of type 'CustomField' named 'ForecastingItem__hd.AmountWithoutManagerAdjustment__c' cannot be found",
+      "problemType": "Error"
+    },
+    {
+      "fullName": "ForecastingItem__hd.OverriddenRollupOwnerView__c",
+      "type": "CustomField",
+      "state": "Failed",
+      "error": "Entity of type 'CustomField' named 'ForecastingItem__hd.OverriddenRollupOwnerView__c' cannot be found",
+      "problemType": "Error"
+    },
+    {
+      "fullName": "Opportunity__hd.ForecastCategoryName__c",
+      "type": "CustomField",
+      "state": "Failed",
+      "error": "Entity of type 'CustomField' named 'Opportunity__hd.ForecastCategoryName__c' cannot be found",
+      "problemType": "Error"
+    },
+    {
+      "fullName": "Opportunity__hd.NextStep__c",
+      "type": "CustomField",
+      "state": "Failed",
+      "error": "Entity of type 'CustomField' named 'Opportunity__hd.NextStep__c' cannot be found",
+      "problemType": "Error"
+    },
+    {
+      "fullName": "Opportunity__hd.Probability__c",
+      "type": "CustomField",
+      "state": "Failed",
+      "error": "Entity of type 'CustomField' named 'Opportunity__hd.Probability__c' cannot be found",
+      "problemType": "Error"
+    },
+    {
+      "fullName": "ForecastingItem__hd.ForecastQuantity__c",
+      "type": "CustomField",
+      "state": "Failed",
+      "error": "Entity of type 'CustomField' named 'ForecastingItem__hd.ForecastQuantity__c' cannot be found",
+      "problemType": "Error"
+    },
+    {
+      "fullName": "ForecastingItem__hd.OverriddenRollupMgrView__c",
+      "type": "CustomField",
+      "state": "Failed",
+      "error": "Entity of type 'CustomField' named 'ForecastingItem__hd.OverriddenRollupMgrView__c' cannot be found",
+      "problemType": "Error"
+    },
+    {
+      "fullName": "ForecastingItem__hd.RawRollup__c",
+      "type": "CustomField",
+      "state": "Failed",
+      "error": "Entity of type 'CustomField' named 'ForecastingItem__hd.RawRollup__c' cannot be found",
+      "problemType": "Error"
+    },
+    {
+      "fullName": "ForecastingItem__hd.OwnerOnlyQuantity__c",
+      "type": "CustomField",
+      "state": "Failed",
+      "error": "Entity of type 'CustomField' named 'ForecastingItem__hd.OwnerOnlyQuantity__c' cannot be found",
+      "problemType": "Error"
+    },
+    {
+      "fullName": "Opportunity__hd.StageName__c",
+      "type": "CustomField",
+      "state": "Failed",
+      "error": "Entity of type 'CustomField' named 'Opportunity__hd.StageName__c' cannot be found",
+      "problemType": "Error"
+    },
+    {
+      "fullName": "ForecastingItem__hd.RawOwnerOnly__c",
+      "type": "CustomField",
+      "state": "Failed",
+      "error": "Entity of type 'CustomField' named 'ForecastingItem__hd.RawOwnerOnly__c' cannot be found",
+      "problemType": "Error"
+    },
+    {
+      "fullName": "ForecastingItem__hd.ForecastAmount__c",
+      "type": "CustomField",
+      "state": "Failed",
+      "error": "Entity of type 'CustomField' named 'ForecastingItem__hd.ForecastAmount__c' cannot be found",
+      "problemType": "Error"
+    },
+    {
+      "fullName": "ForecastingItem__hd.AmountWithoutAdjustments__c",
+      "type": "CustomField",
+      "state": "Failed",
+      "error": "Entity of type 'CustomField' named 'ForecastingItem__hd.AmountWithoutAdjustments__c' cannot be found",
+      "problemType": "Error"
+    },
+    {
+      "fullName": "Opportunity__hd.Amount__c",
+      "type": "CustomField",
+      "state": "Failed",
+      "error": "Entity of type 'CustomField' named 'Opportunity__hd.Amount__c' cannot be found",
+      "problemType": "Error"
+    },
+    {
+      "fullName": "FlowOrchestrationWorkItem.ALL_Open_Work_Items",
+      "type": "ListView",
+      "state": "Failed",
+      "error": "Entity of type 'ListView' named 'FlowOrchestrationWorkItem.ALL_Open_Work_Items' cannot be found",
+      "problemType": "Error"
+    },
+    {
+      "fullName": "ExpressionSet.All_ExpressionSets",
+      "type": "ListView",
+      "state": "Failed",
+      "error": "Entity of type 'ListView' named 'ExpressionSet.All_ExpressionSets' cannot be found",
+      "problemType": "Error"
+    },
+    {
+      "fullName": "WorkOrder.My_WorkOrders",
+      "type": "ListView",
+      "state": "Failed",
+      "error": "Entity of type 'ListView' named 'WorkOrder.My_WorkOrders' cannot be found",
+      "problemType": "Error"
+    },
+    {
+      "fullName": "Employee.EmployeesWithoutUser",
+      "type": "ListView",
+      "state": "Failed",
+      "error": "Entity of type 'ListView' named 'Employee.EmployeesWithoutUser' cannot be found",
+      "problemType": "Error"
+    },
+    {
+      "fullName": "Scorecard.MyScorecards",
+      "type": "ListView",
+      "state": "Failed",
+      "error": "Entity of type 'ListView' named 'Scorecard.MyScorecards' cannot be found",
+      "problemType": "Error"
+    },
+    {
+      "fullName": "SocialPost.AllSocialPosts",
+      "type": "ListView",
+      "state": "Failed",
+      "error": "Entity of type 'ListView' named 'SocialPost.AllSocialPosts' cannot be found",
+      "problemType": "Error"
+    },
+    {
+      "fullName": "Incident.AllIncidentsDefault",
+      "type": "ListView",
+      "state": "Failed",
+      "error": "Entity of type 'ListView' named 'Incident.AllIncidentsDefault' cannot be found",
+      "problemType": "Error"
+    },
+    {
+      "fullName": "EngagementInteraction.All_EngagementInteractions",
+      "type": "ListView",
+      "state": "Failed",
+      "error": "Entity of type 'ListView' named 'EngagementInteraction.All_EngagementInteractions' cannot be found",
+      "problemType": "Error"
+    },
+    {
+      "fullName": "OutboundEngagementTemplate.All_OutboundEngagementTemplates",
+      "type": "ListView",
+      "state": "Failed",
+      "error": "Entity of type 'ListView' named 'OutboundEngagementTemplate.All_OutboundEngagementTemplates' cannot be found",
+      "problemType": "Error"
+    },
+    {
+      "fullName": "ProcessException.all_process_exceptions",
+      "type": "ListView",
+      "state": "Failed",
+      "error": "Entity of type 'ListView' named 'ProcessException.all_process_exceptions' cannot be found",
+      "problemType": "Error"
+    },
+    {
+      "fullName": "Recommendation.All_Recommendations",
+      "type": "ListView",
+      "state": "Failed",
+      "error": "Entity of type 'ListView' named 'Recommendation.All_Recommendations' cannot be found",
+      "problemType": "Error"
+    },
+    {
+      "fullName": "ServiceContract.All_ServiceContracts",
+      "type": "ListView",
+      "state": "Failed",
+      "error": "Entity of type 'ListView' named 'ServiceContract.All_ServiceContracts' cannot be found",
+      "problemType": "Error"
+    },
+    {
+      "fullName": "Quote.mine",
+      "type": "ListView",
+      "state": "Failed",
+      "error": "Entity of type 'ListView' named 'Quote.mine' cannot be found",
+      "problemType": "Error"
+    },
+    {
+      "fullName": "Task.UnscheduledTasks",
+      "type": "ListView",
+      "state": "Failed",
+      "error": "Entity of type 'ListView' named 'Task.UnscheduledTasks' cannot be found",
+      "problemType": "Error"
+    },
+    {
+      "fullName": "ExpressionSet.All_IdsDefinitions",
+      "type": "ListView",
+      "state": "Failed",
+      "error": "Entity of type 'ListView' named 'ExpressionSet.All_IdsDefinitions' cannot be found",
+      "problemType": "Error"
+    },
+    {
+      "fullName": "Task.CompletedTasks",
+      "type": "ListView",
+      "state": "Failed",
+      "error": "Entity of type 'ListView' named 'Task.CompletedTasks' cannot be found",
+      "problemType": "Error"
+    },
+    {
+      "fullName": "ContentDocument.OwnedContentDocuments",
+      "type": "ListView",
+      "state": "Failed",
+      "error": "Entity of type 'ListView' named 'ContentDocument.OwnedContentDocuments' cannot be found",
+      "problemType": "Error"
+    },
+    {
+      "fullName": "Event.TodaysAgenda",
+      "type": "ListView",
+      "state": "Failed",
+      "error": "Entity of type 'ListView' named 'Event.TodaysAgenda' cannot be found",
+      "problemType": "Error"
+    },
+    {
+      "fullName": "Task.OverdueTasks",
+      "type": "ListView",
+      "state": "Failed",
+      "error": "Entity of type 'ListView' named 'Task.OverdueTasks' cannot be found",
+      "problemType": "Error"
+    },
+    {
+      "fullName": "ContactRequest.My_ContactRequests",
+      "type": "ListView",
+      "state": "Failed",
+      "error": "Entity of type 'ListView' named 'ContactRequest.My_ContactRequests' cannot be found",
+      "problemType": "Error"
+    },
+    {
+      "fullName": "CalculationProcedure.All_CalculationProcedures",
+      "type": "ListView",
+      "state": "Failed",
+      "error": "Entity of type 'ListView' named 'CalculationProcedure.All_CalculationProcedures' cannot be found",
+      "problemType": "Error"
+    },
+    {
+      "fullName": "Event.MyTeamsRecentEvents",
+      "type": "ListView",
+      "state": "Failed",
+      "error": "Entity of type 'ListView' named 'Event.MyTeamsRecentEvents' cannot be found",
+      "problemType": "Error"
+    },
+    {
+      "fullName": "OutboundEngmtContentRsrc.All_OutboundEngmtContentRsrcs",
+      "type": "ListView",
+      "state": "Failed",
+      "error": "Entity of type 'ListView' named 'OutboundEngmtContentRsrc.All_OutboundEngmtContentRsrcs' cannot be found",
+      "problemType": "Error"
+    },
+    {
+      "fullName": "ApprovalSubmissionDetail.All_ApprovalSubmissionDetails",
+      "type": "ListView",
+      "state": "Failed",
+      "error": "Entity of type 'ListView' named 'ApprovalSubmissionDetail.All_ApprovalSubmissionDetails' cannot be found",
+      "problemType": "Error"
+    },
+    {
+      "fullName": "LocationTrustMeasure.AllLocationTrustMeasures",
+      "type": "ListView",
+      "state": "Failed",
+      "error": "Entity of type 'ListView' named 'LocationTrustMeasure.AllLocationTrustMeasures' cannot be found",
+      "problemType": "Error"
+    },
+    {
+      "fullName": "Entitlement.All_Entitlements",
+      "type": "ListView",
+      "state": "Failed",
+      "error": "Entity of type 'ListView' named 'Entitlement.All_Entitlements' cannot be found",
+      "problemType": "Error"
+    },
+    {
+      "fullName": "Task.TodaysTasks",
+      "type": "ListView",
+      "state": "Failed",
+      "error": "Entity of type 'ListView' named 'Task.TodaysTasks' cannot be found",
+      "problemType": "Error"
+    },
+    {
+      "fullName": "FlowOrchestrationInstance.All_Orchestration_Instances",
+      "type": "ListView",
+      "state": "Failed",
+      "error": "Entity of type 'ListView' named 'FlowOrchestrationInstance.All_Orchestration_Instances' cannot be found",
+      "problemType": "Error"
+    },
+    {
+      "fullName": "EngagementAttendee.My_EngagementAttendees",
+      "type": "ListView",
+      "state": "Failed",
+      "error": "Entity of type 'ListView' named 'EngagementAttendee.My_EngagementAttendees' cannot be found",
+      "problemType": "Error"
+    },
+    {
+      "fullName": "Employee.AllEmployees",
+      "type": "ListView",
+      "state": "Failed",
+      "error": "Entity of type 'ListView' named 'Employee.AllEmployees' cannot be found",
+      "problemType": "Error"
+    },
+    {
+      "fullName": "BatchJobPart.All_Tasks",
+      "type": "ListView",
+      "state": "Failed",
+      "error": "Entity of type 'ListView' named 'BatchJobPart.All_Tasks' cannot be found",
+      "problemType": "Error"
+    },
+    {
+      "fullName": "Task.DelegatedTasks",
+      "type": "ListView",
+      "state": "Failed",
+      "error": "Entity of type 'ListView' named 'Task.DelegatedTasks' cannot be found",
+      "problemType": "Error"
+    },
+    {
+      "fullName": "SocialPersona.AllSocialPersonas",
+      "type": "ListView",
+      "state": "Failed",
+      "error": "Entity of type 'ListView' named 'SocialPersona.AllSocialPersonas' cannot be found",
+      "problemType": "Error"
+    },
+    {
+      "fullName": "RecordAlertActionableTarget.All_RecordAlertActionableTargets",
+      "type": "ListView",
+      "state": "Failed",
+      "error": "Entity of type 'ListView' named 'RecordAlertActionableTarget.All_RecordAlertActionableTargets' cannot be found",
+      "problemType": "Error"
+    },
+    {
+      "fullName": "ApprovalWorkItem.Assigned_ApprovalWorkItems",
+      "type": "ListView",
+      "state": "Failed",
+      "error": "Entity of type 'ListView' named 'ApprovalWorkItem.Assigned_ApprovalWorkItems' cannot be found",
+      "problemType": "Error"
+    },
+    {
+      "fullName": "ApprovalSubmission.Pending_ApprovalSubmissions",
+      "type": "ListView",
+      "state": "Failed",
+      "error": "Entity of type 'ListView' named 'ApprovalSubmission.Pending_ApprovalSubmissions' cannot be found",
+      "problemType": "Error"
+    },
+    {
+      "fullName": "BatchJobPartFailedRecord.All_Failed_Records",
+      "type": "ListView",
+      "state": "Failed",
+      "error": "Entity of type 'ListView' named 'BatchJobPartFailedRecord.All_Failed_Records' cannot be found",
+      "problemType": "Error"
+    },
+    {
+      "fullName": "ApprovalSubmission.My_ApprovalSubmissions",
+      "type": "ListView",
+      "state": "Failed",
+      "error": "Entity of type 'ListView' named 'ApprovalSubmission.My_ApprovalSubmissions' cannot be found",
+      "problemType": "Error"
+    },
+    {
+      "fullName": "CalculationMatrix.All_CalculationMatrices",
+      "type": "ListView",
+      "state": "Failed",
+      "error": "Entity of type 'ListView' named 'CalculationMatrix.All_CalculationMatrices' cannot be found",
+      "problemType": "Error"
+    },
+    {
+      "fullName": "EngagementTopic.All_EngagementTopics",
+      "type": "ListView",
+      "state": "Failed",
+      "error": "Entity of type 'ListView' named 'EngagementTopic.All_EngagementTopics' cannot be found",
+      "problemType": "Error"
+    },
+    {
+      "fullName": "InternalOrganizationUnit.AllInternalOrganizationUnits",
+      "type": "ListView",
+      "state": "Failed",
+      "error": "Entity of type 'ListView' named 'InternalOrganizationUnit.AllInternalOrganizationUnits' cannot be found",
+      "problemType": "Error"
+    },
+    {
+      "fullName": "Task.OpenTasks",
+      "type": "ListView",
+      "state": "Failed",
+      "error": "Entity of type 'ListView' named 'Task.OpenTasks' cannot be found",
+      "problemType": "Error"
+    },
+    {
+      "fullName": "EngagementInteraction.My_EngagementInteractions",
+      "type": "ListView",
+      "state": "Failed",
+      "error": "Entity of type 'ListView' named 'EngagementInteraction.My_EngagementInteractions' cannot be found",
+      "problemType": "Error"
+    },
+    {
+      "fullName": "CollaborationGroup.All_ChatterGroups",
+      "type": "ListView",
+      "state": "Failed",
+      "error": "Entity of type 'ListView' named 'CollaborationGroup.All_ChatterGroups' cannot be found",
+      "problemType": "Error"
+    },
+    {
+      "fullName": "BatchJob.All_Batch_Jobs",
+      "type": "ListView",
+      "state": "Failed",
+      "error": "Entity of type 'ListView' named 'BatchJob.All_Batch_Jobs' cannot be found",
+      "problemType": "Error"
+    },
+    {
+      "fullName": "Event.MyRecentEvents",
+      "type": "ListView",
+      "state": "Failed",
+      "error": "Entity of type 'ListView' named 'Event.MyRecentEvents' cannot be found",
+      "problemType": "Error"
+    },
+    {
+      "fullName": "FlowOrchestrationWorkItem.All_Work_Items",
+      "type": "ListView",
+      "state": "Failed",
+      "error": "Entity of type 'ListView' named 'FlowOrchestrationWorkItem.All_Work_Items' cannot be found",
+      "problemType": "Error"
+    },
+    {
+      "fullName": "EngagementAttendee.All_EngagementAttendees",
+      "type": "ListView",
+      "state": "Failed",
+      "error": "Entity of type 'ListView' named 'EngagementAttendee.All_EngagementAttendees' cannot be found",
+      "problemType": "Error"
+    },
+    {
+      "fullName": "Scorecard.AllScorecards",
+      "type": "ListView",
+      "state": "Failed",
+      "error": "Entity of type 'ListView' named 'Scorecard.AllScorecards' cannot be found",
+      "problemType": "Error"
+    },
+    {
+      "fullName": "WorkOrder.All_WorkOrders",
+      "type": "ListView",
+      "state": "Failed",
+      "error": "Entity of type 'ListView' named 'WorkOrder.All_WorkOrders' cannot be found",
+      "problemType": "Error"
+    },
+    {
+      "fullName": "Task.RecurringTasks",
+      "type": "ListView",
+      "state": "Failed",
+      "error": "Entity of type 'ListView' named 'Task.RecurringTasks' cannot be found",
+      "problemType": "Error"
+    },
+    {
+      "fullName": "EngagementTopic.My_EngagementTopics",
+      "type": "ListView",
+      "state": "Failed",
+      "error": "Entity of type 'ListView' named 'EngagementTopic.My_EngagementTopics' cannot be found",
+      "problemType": "Error"
+    },
+    {
+      "fullName": "ApprovalWorkItem.All_ApprovalWorkItems",
+      "type": "ListView",
+      "state": "Failed",
+      "error": "Entity of type 'ListView' named 'ApprovalWorkItem.All_ApprovalWorkItems' cannot be found",
+      "problemType": "Error"
+    },
+    {
+      "fullName": "Event.MyTeamsUpcomingEvents",
+      "type": "ListView",
+      "state": "Failed",
+      "error": "Entity of type 'ListView' named 'Event.MyTeamsUpcomingEvents' cannot be found",
+      "problemType": "Error"
+    },
+    {
+      "fullName": "ApprovalSubmission.All_ApprovalSubmissions",
+      "type": "ListView",
+      "state": "Failed",
+      "error": "Entity of type 'ListView' named 'ApprovalSubmission.All_ApprovalSubmissions' cannot be found",
+      "problemType": "Error"
+    },
+    {
+      "fullName": "RecordAlert.all_record_alerts",
+      "type": "ListView",
+      "state": "Failed",
+      "error": "Entity of type 'ListView' named 'RecordAlert.all_record_alerts' cannot be found",
+      "problemType": "Error"
+    },
+    {
+      "fullName": "Idea.Ideas_Last_7_Days",
+      "type": "ListView",
+      "state": "Failed",
+      "error": "Entity of type 'ListView' named 'Idea.Ideas_Last_7_Days' cannot be found",
+      "problemType": "Error"
+    },
+    {
+      "fullName": "Event.MyUpcomingEvents",
+      "type": "ListView",
+      "state": "Failed",
+      "error": "Entity of type 'ListView' named 'Event.MyUpcomingEvents' cannot be found",
+      "problemType": "Error"
+    },
+    {
+      "fullName": "",
+      "type": "",
+      "problemType": "Error",
+      "state": "Failed",
+      "error": "Entity type 'UiViewDefinition' is not available in this organization"
+    },
+    {
+      "fullName": "Mat_BeforeOpp",
+      "type": "WorkflowFlowAutomation",
+      "state": "Failed",
+      "error": "Entity of type 'WorkflowFlowAutomation' named 'Mat_BeforeOpp' cannot be found: Invalid full name, Current Name: Mat_BeforeOpp, Required Delimiter: .",
+      "problemType": "Error"
+    },
+    {
+      "fullName": "Mat_Selecciona_Servicios_Oportunidad",
+      "type": "WorkflowFlowAutomation",
+      "state": "Failed",
+      "error": "Entity of type 'WorkflowFlowAutomation' named 'Mat_Selecciona_Servicios_Oportunidad' cannot be found: Invalid full name, Current Name: Mat_Selecciona_Servicios_Oportunidad, Required Delimiter: .",
+      "problemType": "Error"
+    },
+    {
+      "fullName": "Mat_Automatizaciones_Oportunidad",
+      "type": "WorkflowFlowAutomation",
+      "state": "Failed",
+      "error": "Entity of type 'WorkflowFlowAutomation' named 'Mat_Automatizaciones_Oportunidad' cannot be found: Invalid full name, Current Name: Mat_Automatizaciones_Oportunidad, Required Delimiter: .",
+      "problemType": "Error"
+    },
+    {
+      "fullName": "Mat_BeforeServicioTalento",
+      "type": "WorkflowFlowAutomation",
+      "state": "Failed",
+      "error": "Entity of type 'WorkflowFlowAutomation' named 'Mat_BeforeServicioTalento' cannot be found: Invalid full name, Current Name: Mat_BeforeServicioTalento, Required Delimiter: .",
+      "problemType": "Error"
+    },
+    {
+      "fullName": "",
+      "type": "",
+      "problemType": "Error",
+      "state": "Failed",
+      "error": "Metadata API received improper input. Please ensure file name and capitalization is correct. Load of metadata from db failed for metadata of type:CustomObject and file name:BatchJob."
+    },
+    {
+      "fullName": "",
+      "type": "",
+      "problemType": "Error",
+      "state": "Failed",
+      "error": ""
+    },
+    {
+      "fullName": "",
+      "type": "",
+      "problemType": "Error",
+      "state": "Failed",
+      "error": ""
+    },
+    {
+      "fullName": "",
+      "type": "",
+      "problemType": "Error",
+      "state": "Failed",
+      "error": ""
+    },
+    {
+      "fullName": "",
+      "type": "",
+      "problemType": "Error",
+      "state": "Failed",
+      "error": "Metadata API received improper input. Please ensure file name and capitalization is correct. Load of metadata from db failed for metadata of type:Report and file name:CRM_180925_Sample_Sales_Dashboards_Reports/CRM_180925_Contacts_with_Sales_Cadence_Trackers_Report."
+    },
+    {
+      "fullName": "",
+      "type": "",
+      "problemType": "Error",
+      "state": "Failed",
+      "error": "Metadata API received improper input. Please ensure file name and capitalization is correct. Load of metadata from db failed for metadata of type:Report and file name:CRM_180925_Sample_Sales_Dashboards_Reports/CRM_180925_Leads_with_Sales_Cadence_Trackers_Report."
+    },
+    {
+      "fullName": "",
+      "type": "",
+      "problemType": "Error",
+      "state": "Failed",
+      "error": "Metadata API received improper input. Please ensure file name and capitalization is correct. Load of metadata from db failed for metadata of type:Report and file name:CRM_180925_Sample_Sales_Dashboards_Reports/CRM_180925_Lead_Cadence_Tracker_Conversion_Report."
+    },
+    {
+      "fullName": "",
+      "type": "",
+      "problemType": "Error",
+      "state": "Failed",
+      "error": "Metadata API received improper input. Please ensure file name and capitalization is correct. Load of metadata from db failed for metadata of type:Report and file name:CRM_180925_Sample_Sales_Dashboards_Reports/CRM_180925_Leads_Converted_by_Sales_Rep_Report."
+    },
+    {
+      "fullName": "",
+      "type": "",
+      "problemType": "Error",
+      "state": "Failed",
+      "error": ""
+    },
+    {
+      "fullName": "",
+      "type": "",
+      "problemType": "Error",
+      "state": "Failed",
+      "error": ""
+    },
+    {
+      "fullName": "",
+      "type": "",
+      "problemType": "Error",
+      "state": "Failed",
+      "error": ""
+    },
+    {
+      "fullName": "",
+      "type": "",
+      "problemType": "Error",
+      "state": "Failed",
+      "error": "Metadata API received improper input. Please ensure file name and capitalization is correct. Load of metadata from db failed for metadata of type:Report and file name:CRM_180925_Sample_Sales_Dashboards_Reports/CRM_180925_User_Daily_Engagement_Report."
+    },
+    {
+      "fullName": "",
+      "type": "",
+      "problemType": "Error",
+      "state": "Failed",
+      "error": "Metadata API received improper input. Please ensure file name and capitalization is correct. Load of metadata from db failed for metadata of type:Report and file name:CRM_180925_Sample_Sales_Dashboards_Reports/CRM_180925_Lead_Daily_Engagement_Report."
+    },
+    {
+      "fullName": "",
+      "type": "",
+      "problemType": "Error",
+      "state": "Failed",
+      "error": "Metadata API received improper input. Please ensure file name and capitalization is correct. Load of metadata from db failed for metadata of type:Report and file name:CRM_180925_Sample_Sales_Dashboards_Reports/CRM_180925_Grouped_Users_Monthly_Report."
+    },
+    {
+      "fullName": "",
+      "type": "",
+      "problemType": "Error",
+      "state": "Failed",
+      "error": "Metadata API received improper input. Please ensure file name and capitalization is correct. Load of metadata from db failed for metadata of type:Report and file name:CRM_180925_Sample_Sales_Dashboards_Reports/CRM_180925_Contacts_Engagement_grouped_by_account_Report."
+    },
+    {
+      "fullName": "",
+      "type": "",
+      "problemType": "Error",
+      "state": "Failed",
+      "error": ""
+    },
+    {
+      "fullName": "",
+      "type": "",
+      "problemType": "Error",
+      "state": "Failed",
+      "error": "Metadata API received improper input. Please ensure file name and capitalization is correct. Load of metadata from db failed for metadata of type:Report and file name:CRM_180925_Sample_Sales_Reports/CRM_180925_User_Daily_Metric_Report."
+    },
+    {
+      "fullName": "",
+      "type": "",
+      "problemType": "Error",
+      "state": "Failed",
+      "error": "Metadata API received improper input. Please ensure file name and capitalization is correct. Load of metadata from db failed for metadata of type:Report and file name:CRM_180925_Sample_Sales_Reports/CRM_180925_User_Monthly_Metric_Report."
+    },
+    {
+      "fullName": "",
+      "type": "",
+      "problemType": "Error",
+      "state": "Failed",
+      "error": "Metadata API received improper input. Please ensure file name and capitalization is correct. Load of metadata from db failed for metadata of type:Report and file name:CRM_180925_Sample_Sales_Reports/CRM_180925_Contact_Daily_Metric_Report."
+    },
+    {
+      "fullName": "",
+      "type": "",
+      "problemType": "Error",
+      "state": "Failed",
+      "error": "Metadata API received improper input. Please ensure file name and capitalization is correct. Load of metadata from db failed for metadata of type:Report and file name:CRM_180925_Sample_Sales_Reports/CRM_180925_Contact_Monthly_Metric_Report."
+    },
+    {
+      "fullName": "",
+      "type": "",
+      "problemType": "Error",
+      "state": "Failed",
+      "error": "Metadata API received improper input. Please ensure file name and capitalization is correct. Load of metadata from db failed for metadata of type:Report and file name:CRM_180925_Sample_Sales_Reports/CRM_180925_Lead_Daily_Metric_Report."
+    },
+    {
+      "fullName": "",
+      "type": "",
+      "problemType": "Error",
+      "state": "Failed",
+      "error": "Metadata API received improper input. Please ensure file name and capitalization is correct. Load of metadata from db failed for metadata of type:Report and file name:CRM_180925_Sample_Sales_Reports/CRM_180925_Lead_Monthly_Metric_Report."
+    },
+    {
+      "fullName": "",
+      "type": "",
+      "problemType": "Error",
+      "state": "Failed",
+      "error": ""
+    },
+    {
+      "fullName": "",
+      "type": "",
+      "problemType": "Error",
+      "state": "Failed",
+      "error": ""
+    },
+    {
+      "fullName": "",
+      "type": "",
+      "problemType": "Error",
+      "state": "Failed",
+      "error": "Metadata API received improper input. Please ensure file name and capitalization is correct. Load of metadata from db failed for metadata of type:Dashboard and file name:CRM_180925_HVS_Sample_Dashboard_Folder/CRM_180925_HVS_Sample_Dashboard."
+    },
+    {
+      "fullName": "",
+      "type": "",
+      "problemType": "Error",
+      "state": "Failed",
+      "error": "Retrieve not allowed on channel ActivityEngagementVirtualChannel."
+    },
+    {
+      "fullName": "",
+      "type": "",
+      "problemType": "Error",
+      "state": "Failed",
+      "error": "Retrieve not allowed on channel ActivityEngagementVirtualChannel."
+    },
+    {
+      "fullName": "",
+      "type": "",
+      "problemType": "Error",
+      "state": "Failed",
+      "error": "Retrieve not allowed on channel ActivityEngagementVirtualChannel."
+    },
+    {
+      "fullName": "",
+      "type": "",
+      "problemType": "Error",
+      "state": "Failed",
+      "error": "Retrieve not allowed on channel ActivityEngagementVirtualChannel."
+    },
+    {
+      "fullName": "",
+      "type": "",
+      "problemType": "Error",
+      "state": "Failed",
+      "error": "Retrieve not allowed on channel ActivityEngagementVirtualChannel."
+    },
+    {
+      "fullName": "",
+      "type": "",
+      "problemType": "Error",
+      "state": "Failed",
+      "error": "Retrieve not allowed on channel ActivityEngagementVirtualChannel."
+    },
+    {
+      "fullName": "",
+      "type": "",
+      "problemType": "Error",
+      "state": "Failed",
+      "error": "Metadata API received improper input. Please ensure file name and capitalization is correct. Load of metadata from db failed for metadata of type:ConnectedApp and file name:CPQIntegrationUserApp."
+    }
+  ],
+  "messages": [
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Entity of type 'CustomField' named 'ForecastingItem__hd.QuantityWithoutAdjustments__c' cannot be found"
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Entity of type 'CustomField' named 'Opportunity__hd.CloseDate__c' cannot be found"
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Entity of type 'CustomField' named 'ForecastingItem__hd.QuantityWithoutManagerAdjustment__c' cannot be found"
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Entity of type 'CustomField' named 'ForecastingItem__hd.OwnerOnlyAmount__c' cannot be found"
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Entity of type 'CustomField' named 'ForecastingItem__hd.AmountWithoutManagerAdjustment__c' cannot be found"
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Entity of type 'CustomField' named 'ForecastingItem__hd.OverriddenRollupOwnerView__c' cannot be found"
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Entity of type 'CustomField' named 'Opportunity__hd.ForecastCategoryName__c' cannot be found"
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Entity of type 'CustomField' named 'Opportunity__hd.NextStep__c' cannot be found"
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Entity of type 'CustomField' named 'Opportunity__hd.Probability__c' cannot be found"
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Entity of type 'CustomField' named 'ForecastingItem__hd.ForecastQuantity__c' cannot be found"
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Entity of type 'CustomField' named 'ForecastingItem__hd.OverriddenRollupMgrView__c' cannot be found"
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Entity of type 'CustomField' named 'ForecastingItem__hd.RawRollup__c' cannot be found"
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Entity of type 'CustomField' named 'ForecastingItem__hd.OwnerOnlyQuantity__c' cannot be found"
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Entity of type 'CustomField' named 'Opportunity__hd.StageName__c' cannot be found"
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Entity of type 'CustomField' named 'ForecastingItem__hd.RawOwnerOnly__c' cannot be found"
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Entity of type 'CustomField' named 'ForecastingItem__hd.ForecastAmount__c' cannot be found"
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Entity of type 'CustomField' named 'ForecastingItem__hd.AmountWithoutAdjustments__c' cannot be found"
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Entity of type 'CustomField' named 'Opportunity__hd.Amount__c' cannot be found"
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Entity of type 'ListView' named 'FlowOrchestrationWorkItem.ALL_Open_Work_Items' cannot be found"
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Entity of type 'ListView' named 'ExpressionSet.All_ExpressionSets' cannot be found"
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Entity of type 'ListView' named 'WorkOrder.My_WorkOrders' cannot be found"
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Entity of type 'ListView' named 'Employee.EmployeesWithoutUser' cannot be found"
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Entity of type 'ListView' named 'Scorecard.MyScorecards' cannot be found"
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Entity of type 'ListView' named 'SocialPost.AllSocialPosts' cannot be found"
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Entity of type 'ListView' named 'Incident.AllIncidentsDefault' cannot be found"
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Entity of type 'ListView' named 'EngagementInteraction.All_EngagementInteractions' cannot be found"
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Entity of type 'ListView' named 'OutboundEngagementTemplate.All_OutboundEngagementTemplates' cannot be found"
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Entity of type 'ListView' named 'ProcessException.all_process_exceptions' cannot be found"
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Entity of type 'ListView' named 'Recommendation.All_Recommendations' cannot be found"
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Entity of type 'ListView' named 'ServiceContract.All_ServiceContracts' cannot be found"
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Entity of type 'ListView' named 'Quote.mine' cannot be found"
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Entity of type 'ListView' named 'Task.UnscheduledTasks' cannot be found"
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Entity of type 'ListView' named 'ExpressionSet.All_IdsDefinitions' cannot be found"
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Entity of type 'ListView' named 'Task.CompletedTasks' cannot be found"
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Entity of type 'ListView' named 'ContentDocument.OwnedContentDocuments' cannot be found"
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Entity of type 'ListView' named 'Event.TodaysAgenda' cannot be found"
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Entity of type 'ListView' named 'Task.OverdueTasks' cannot be found"
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Entity of type 'ListView' named 'ContactRequest.My_ContactRequests' cannot be found"
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Entity of type 'ListView' named 'CalculationProcedure.All_CalculationProcedures' cannot be found"
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Entity of type 'ListView' named 'Event.MyTeamsRecentEvents' cannot be found"
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Entity of type 'ListView' named 'OutboundEngmtContentRsrc.All_OutboundEngmtContentRsrcs' cannot be found"
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Entity of type 'ListView' named 'ApprovalSubmissionDetail.All_ApprovalSubmissionDetails' cannot be found"
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Entity of type 'ListView' named 'LocationTrustMeasure.AllLocationTrustMeasures' cannot be found"
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Entity of type 'ListView' named 'Entitlement.All_Entitlements' cannot be found"
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Entity of type 'ListView' named 'Task.TodaysTasks' cannot be found"
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Entity of type 'ListView' named 'FlowOrchestrationInstance.All_Orchestration_Instances' cannot be found"
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Entity of type 'ListView' named 'EngagementAttendee.My_EngagementAttendees' cannot be found"
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Entity of type 'ListView' named 'Employee.AllEmployees' cannot be found"
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Entity of type 'ListView' named 'BatchJobPart.All_Tasks' cannot be found"
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Entity of type 'ListView' named 'Task.DelegatedTasks' cannot be found"
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Entity of type 'ListView' named 'SocialPersona.AllSocialPersonas' cannot be found"
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Entity of type 'ListView' named 'RecordAlertActionableTarget.All_RecordAlertActionableTargets' cannot be found"
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Entity of type 'ListView' named 'ApprovalWorkItem.Assigned_ApprovalWorkItems' cannot be found"
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Entity of type 'ListView' named 'ApprovalSubmission.Pending_ApprovalSubmissions' cannot be found"
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Entity of type 'ListView' named 'BatchJobPartFailedRecord.All_Failed_Records' cannot be found"
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Entity of type 'ListView' named 'ApprovalSubmission.My_ApprovalSubmissions' cannot be found"
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Entity of type 'ListView' named 'CalculationMatrix.All_CalculationMatrices' cannot be found"
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Entity of type 'ListView' named 'EngagementTopic.All_EngagementTopics' cannot be found"
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Entity of type 'ListView' named 'InternalOrganizationUnit.AllInternalOrganizationUnits' cannot be found"
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Entity of type 'ListView' named 'Task.OpenTasks' cannot be found"
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Entity of type 'ListView' named 'EngagementInteraction.My_EngagementInteractions' cannot be found"
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Entity of type 'ListView' named 'CollaborationGroup.All_ChatterGroups' cannot be found"
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Entity of type 'ListView' named 'BatchJob.All_Batch_Jobs' cannot be found"
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Entity of type 'ListView' named 'Event.MyRecentEvents' cannot be found"
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Entity of type 'ListView' named 'FlowOrchestrationWorkItem.All_Work_Items' cannot be found"
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Entity of type 'ListView' named 'EngagementAttendee.All_EngagementAttendees' cannot be found"
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Entity of type 'ListView' named 'Scorecard.AllScorecards' cannot be found"
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Entity of type 'ListView' named 'WorkOrder.All_WorkOrders' cannot be found"
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Entity of type 'ListView' named 'Task.RecurringTasks' cannot be found"
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Entity of type 'ListView' named 'EngagementTopic.My_EngagementTopics' cannot be found"
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Entity of type 'ListView' named 'ApprovalWorkItem.All_ApprovalWorkItems' cannot be found"
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Entity of type 'ListView' named 'Event.MyTeamsUpcomingEvents' cannot be found"
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Entity of type 'ListView' named 'ApprovalSubmission.All_ApprovalSubmissions' cannot be found"
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Entity of type 'ListView' named 'RecordAlert.all_record_alerts' cannot be found"
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Entity of type 'ListView' named 'Idea.Ideas_Last_7_Days' cannot be found"
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Entity of type 'ListView' named 'Event.MyUpcomingEvents' cannot be found"
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Entity type 'UiViewDefinition' is not available in this organization"
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Entity of type 'WorkflowFlowAutomation' named 'Mat_BeforeOpp' cannot be found: Invalid full name, Current Name: Mat_BeforeOpp, Required Delimiter: ."
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Entity of type 'WorkflowFlowAutomation' named 'Mat_Selecciona_Servicios_Oportunidad' cannot be found: Invalid full name, Current Name: Mat_Selecciona_Servicios_Oportunidad, Required Delimiter: ."
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Entity of type 'WorkflowFlowAutomation' named 'Mat_Automatizaciones_Oportunidad' cannot be found: Invalid full name, Current Name: Mat_Automatizaciones_Oportunidad, Required Delimiter: ."
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Entity of type 'WorkflowFlowAutomation' named 'Mat_BeforeServicioTalento' cannot be found: Invalid full name, Current Name: Mat_BeforeServicioTalento, Required Delimiter: ."
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Metadata API received improper input. Please ensure file name and capitalization is correct. Load of metadata from db failed for metadata of type:CustomObject and file name:BatchJob."
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": ""
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": ""
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": ""
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Metadata API received improper input. Please ensure file name and capitalization is correct. Load of metadata from db failed for metadata of type:Report and file name:CRM_180925_Sample_Sales_Dashboards_Reports/CRM_180925_Contacts_with_Sales_Cadence_Trackers_Report."
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Metadata API received improper input. Please ensure file name and capitalization is correct. Load of metadata from db failed for metadata of type:Report and file name:CRM_180925_Sample_Sales_Dashboards_Reports/CRM_180925_Leads_with_Sales_Cadence_Trackers_Report."
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Metadata API received improper input. Please ensure file name and capitalization is correct. Load of metadata from db failed for metadata of type:Report and file name:CRM_180925_Sample_Sales_Dashboards_Reports/CRM_180925_Lead_Cadence_Tracker_Conversion_Report."
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Metadata API received improper input. Please ensure file name and capitalization is correct. Load of metadata from db failed for metadata of type:Report and file name:CRM_180925_Sample_Sales_Dashboards_Reports/CRM_180925_Leads_Converted_by_Sales_Rep_Report."
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": ""
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": ""
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": ""
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Metadata API received improper input. Please ensure file name and capitalization is correct. Load of metadata from db failed for metadata of type:Report and file name:CRM_180925_Sample_Sales_Dashboards_Reports/CRM_180925_User_Daily_Engagement_Report."
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Metadata API received improper input. Please ensure file name and capitalization is correct. Load of metadata from db failed for metadata of type:Report and file name:CRM_180925_Sample_Sales_Dashboards_Reports/CRM_180925_Lead_Daily_Engagement_Report."
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Metadata API received improper input. Please ensure file name and capitalization is correct. Load of metadata from db failed for metadata of type:Report and file name:CRM_180925_Sample_Sales_Dashboards_Reports/CRM_180925_Grouped_Users_Monthly_Report."
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Metadata API received improper input. Please ensure file name and capitalization is correct. Load of metadata from db failed for metadata of type:Report and file name:CRM_180925_Sample_Sales_Dashboards_Reports/CRM_180925_Contacts_Engagement_grouped_by_account_Report."
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": ""
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Metadata API received improper input. Please ensure file name and capitalization is correct. Load of metadata from db failed for metadata of type:Report and file name:CRM_180925_Sample_Sales_Reports/CRM_180925_User_Daily_Metric_Report."
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Metadata API received improper input. Please ensure file name and capitalization is correct. Load of metadata from db failed for metadata of type:Report and file name:CRM_180925_Sample_Sales_Reports/CRM_180925_User_Monthly_Metric_Report."
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Metadata API received improper input. Please ensure file name and capitalization is correct. Load of metadata from db failed for metadata of type:Report and file name:CRM_180925_Sample_Sales_Reports/CRM_180925_Contact_Daily_Metric_Report."
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Metadata API received improper input. Please ensure file name and capitalization is correct. Load of metadata from db failed for metadata of type:Report and file name:CRM_180925_Sample_Sales_Reports/CRM_180925_Contact_Monthly_Metric_Report."
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Metadata API received improper input. Please ensure file name and capitalization is correct. Load of metadata from db failed for metadata of type:Report and file name:CRM_180925_Sample_Sales_Reports/CRM_180925_Lead_Daily_Metric_Report."
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Metadata API received improper input. Please ensure file name and capitalization is correct. Load of metadata from db failed for metadata of type:Report and file name:CRM_180925_Sample_Sales_Reports/CRM_180925_Lead_Monthly_Metric_Report."
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": ""
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": ""
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Metadata API received improper input. Please ensure file name and capitalization is correct. Load of metadata from db failed for metadata of type:Dashboard and file name:CRM_180925_HVS_Sample_Dashboard_Folder/CRM_180925_HVS_Sample_Dashboard."
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Retrieve not allowed on channel ActivityEngagementVirtualChannel."
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Retrieve not allowed on channel ActivityEngagementVirtualChannel."
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Retrieve not allowed on channel ActivityEngagementVirtualChannel."
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Retrieve not allowed on channel ActivityEngagementVirtualChannel."
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Retrieve not allowed on channel ActivityEngagementVirtualChannel."
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Retrieve not allowed on channel ActivityEngagementVirtualChannel."
+    },
+    {
+      "fileName": "unpackaged/package.xml",
+      "problem": "Metadata API received improper input. Please ensure file name and capitalization is correct. Load of metadata from db failed for metadata of type:ConnectedApp and file name:CPQIntegrationUserApp."
+    }
+  ]
+}

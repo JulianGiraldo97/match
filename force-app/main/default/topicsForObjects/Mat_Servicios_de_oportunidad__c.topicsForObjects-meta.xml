@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TopicsForObjects xmlns="http://soap.sforce.com/2006/04/metadata">
+    <enableTopics>false</enableTopics>
+    <entityApiName>Mat_Servicios_de_oportunidad__c</entityApiName>
+</TopicsForObjects>

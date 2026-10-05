@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>None</fullName>
+        <default>false</default>
+        <label>None</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Redes Sociales</fullName>
+        <default>false</default>
+        <label>Redes Sociales</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Video</fullName>
+        <default>false</default>
+        <label>Video</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Evento</fullName>
+        <default>false</default>
+        <label>Evento</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Derechos</fullName>
+        <default>false</default>
+        <label>Derechos</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Publicidad</fullName>
+        <default>false</default>
+        <label>Publicidad</label>
+    </standardValue>
+</StandardValueSet>

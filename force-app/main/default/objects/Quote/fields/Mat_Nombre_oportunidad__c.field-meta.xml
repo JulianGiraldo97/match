@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mat_Nombre_oportunidad__c</fullName>
+    <description
+  >Conserva el nombre de la oportunidad al generar esta cotización.</description>
+    <inlineHelpText
+  >Valores guardados al generar la cotización. Consulta el registro de origen para ver los valores actuales.</inlineHelpText>
+    <label>Nombre de oportunidad cotizada</label>
+    <length>255</length>
+    <type>Text</type>
+</CustomField>

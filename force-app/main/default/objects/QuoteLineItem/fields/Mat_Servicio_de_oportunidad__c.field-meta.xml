@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mat_Servicio_de_oportunidad__c</fullName>
+    <description
+  >Permite consultar el servicio que originó esta línea; los importes cotizados permanecen guardados aquí.</description>
+    <inlineHelpText
+  >Valores guardados al generar la cotización. Consulta el registro de origen para ver los valores actuales.</inlineHelpText>
+    <label>Servicio de oportunidad origen</label>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <referenceTo>Mat_Servicios_de_oportunidad__c</referenceTo>
+    <relationshipLabel>Líneas de cotizaciones</relationshipLabel>
+    <relationshipName>Mat_Lineas_cotizaciones</relationshipName>
+    <required>false</required>
+    <type>Lookup</type>
+</CustomField>

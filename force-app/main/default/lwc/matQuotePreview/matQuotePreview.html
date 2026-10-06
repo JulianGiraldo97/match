@@ -1,0 +1,35 @@
+<template>
+  <lightning-quick-action-panel header="Cotización Match">
+    <template lwc:if={isLoading}>
+      <lightning-spinner
+        alternative-text="Cargando cotización"
+        size="small"
+      ></lightning-spinner>
+    </template>
+    <template lwc:if={errorMessage}>
+      <p role="alert">{errorMessage}</p>
+    </template>
+    <template lwc:if={context}>
+      <iframe
+        src={pdfUrl}
+        title="PDF guardado de la cotización Match"
+        class="pdf-preview"
+      ></iframe>
+    </template>
+    <div slot="footer">
+      <lightning-button label="Cerrar" onclick={handleClose}></lightning-button>
+      <template lwc:if={context}>
+        <lightning-button
+          label="Abrir archivo"
+          onclick={handleFilePreview}
+        ></lightning-button>
+      </template>
+      <lightning-button
+        label="Enviar por correo"
+        variant="brand"
+        onclick={handleSend}
+        disabled={disableEmail}
+      ></lightning-button>
+    </div>
+  </lightning-quick-action-panel>
+</template>

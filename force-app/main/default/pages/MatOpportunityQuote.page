@@ -1,0 +1,220 @@
+<apex:page
+  standardController="Opportunity"
+  extensions="MatQuotePdfController"
+  renderAs="pdf"
+  showHeader="false"
+  sidebar="false"
+  standardStylesheets="false"
+  applyHtmlTag="false"
+  applyBodyTag="false"
+  readOnly="true"
+  language="es"
+>
+  <html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+    <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <style type="text/css">
+        @page {
+          size: A4;
+          margin: 16mm 15mm 18mm;
+          @bottom-right {
+            content: "Página " counter(page) " de " counter(pages);
+            font-size: 9pt;
+            color: #666666;
+          }
+        }
+        body {
+          font-family: Arial, sans-serif;
+          font-size: 10pt;
+          color: #262626;
+        }
+        .header {
+          width: 100%;
+          border-bottom: 4px solid #ffdf00;
+          margin-bottom: 18px;
+        }
+        .header td {
+          padding: 0 0 12px;
+          vertical-align: middle;
+        }
+        .logo {
+          width: 300px;
+          height: 60px;
+        }
+        .title {
+          text-align: right;
+          font-size: 24pt;
+          font-weight: bold;
+        }
+        .details {
+          width: 100%;
+          margin-bottom: 20px;
+        }
+        .details td {
+          padding: 4px 0;
+          vertical-align: top;
+        }
+        .label {
+          font-weight: bold;
+          width: 90px;
+        }
+        .services {
+          width: 100%;
+          border-collapse: collapse;
+          table-layout: fixed;
+          -fs-table-paginate: paginate;
+        }
+        .services thead {
+          display: table-header-group;
+        }
+        .services th {
+          background: #ffdf00;
+          padding: 10px 8px;
+          text-align: left;
+          font-size: 9pt;
+        }
+        .services td {
+          border-bottom: 1px solid #dddddd;
+          padding: 9px 8px;
+          vertical-align: top;
+          word-wrap: break-word;
+        }
+        .services tr {
+          page-break-inside: avoid;
+        }
+        .services .number {
+          text-align: right;
+        }
+        .summary {
+          width: 65%;
+          margin: 20px 0 0 auto;
+          border-collapse: collapse;
+          page-break-inside: avoid;
+        }
+        .summary td {
+          padding: 8px;
+          border-bottom: 1px solid #dddddd;
+        }
+        .summary .value {
+          text-align: right;
+          font-weight: bold;
+        }
+        .summary .total {
+          background: #ffdf00;
+          font-weight: bold;
+        }
+        .conditions {
+          margin-top: 24px;
+        }
+        .conditions h2 {
+          font-size: 12pt;
+          margin-bottom: 8px;
+          page-break-after: avoid;
+        }
+        .conditions-text {
+          white-space: pre-wrap;
+          word-wrap: break-word;
+        }
+      </style>
+    </head>
+    <body>
+      <table class="header">
+        <tr>
+          <td>
+            <apex:image
+              url="{!$Resource.Mat_LogoCotizacion}"
+              styleClass="logo"
+              alt="Match Management"
+            />
+          </td>
+          <td class="title">Cotización</td>
+        </tr>
+      </table>
+      <table class="details">
+        <tr>
+          <td class="label">Cliente</td>
+          <td><apex:outputText value="{!clientName}" /></td>
+        </tr>
+        <tr>
+          <td class="label">Oportunidad</td>
+          <td><apex:outputText value="{!opportunity.Name}" /></td>
+        </tr>
+        <tr>
+          <td class="label">Fecha</td>
+          <td><apex:outputText value="{!generatedOn}" /></td>
+        </tr>
+        <tr>
+          <td class="label">Moneda</td>
+          <td><apex:outputText value="{!opportunity.Mat_Moneda__c}" /></td>
+        </tr>
+      </table>
+      <table class="services">
+        <thead>
+          <tr>
+            <th style="width: 40%">Servicio</th>
+            <th class="number" style="width: 20%">
+              Tarifa<br /><apex:outputText
+                value="{!opportunity.Mat_Moneda__c}"
+              />
+            </th>
+            <th class="number" style="width: 15%">Descuento (%)</th>
+            <th class="number" style="width: 25%">
+              Tarifa negociada<br /><apex:outputText
+                value="{!opportunity.Mat_Moneda__c}"
+              />
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <apex:repeat value="{!rows}" var="service"
+            ><tr>
+              <td><apex:outputText value="{!service.name}" /></td>
+              <td class="number">
+                <apex:outputText value="{!service.rate}" />
+              </td>
+              <td class="number">
+                <apex:outputText value="{!service.discount}" />
+              </td>
+              <td class="number">
+                <apex:outputText value="{!service.negotiatedRate}" />
+              </td></tr
+          ></apex:repeat>
+        </tbody>
+      </table>
+      <table class="summary">
+        <tr>
+          <td>Tarifa total de la oportunidad</td>
+          <td class="value">
+            <apex:outputText value="{0} {1}">
+              <apex:param value="{!totalRate}" />
+              <apex:param value="{!opportunity.Mat_Moneda__c}" />
+            </apex:outputText>
+          </td>
+        </tr>
+        <tr>
+          <td>Descuento de la oportunidad</td>
+          <td class="value"><apex:outputText value="{!discount}" /></td>
+        </tr>
+        <tr class="total">
+          <td>Tarifa negociada de la oportunidad</td>
+          <td class="value">
+            <apex:outputText value="{0} {1}">
+              <apex:param value="{!negotiatedRate}" />
+              <apex:param value="{!opportunity.Mat_Moneda__c}" />
+            </apex:outputText>
+          </td>
+        </tr>
+      </table>
+      <apex:outputPanel
+        layout="block"
+        styleClass="conditions"
+        rendered="{!hasConditions}"
+      >
+        <h2>Condiciones comerciales</h2>
+        <div class="conditions-text">
+          <apex:outputText value="{!opportunity.Condiciones_comerciales__c}" />
+        </div>
+      </apex:outputPanel>
+    </body>
+  </html>
+</apex:page>

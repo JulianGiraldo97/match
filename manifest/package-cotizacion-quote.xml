@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>MatQuoteData</members>
+        <members>MatQuoteService</members>
+        <members>MatQuoteCatalog</members>
+        <members>MatQuoteRecordWriter</members>
+        <members>MatQuoteTestDataFactory</members>
+        <members>MatQuoteServiceTest</members>
+        <members>MatQuoteRecordWriterTest</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>Quote.Mat_Moneda__c</members>
+        <members>Quote.Mat_Cliente__c</members>
+        <members>Quote.Mat_Nombre_oportunidad__c</members>
+        <members>Quote.Mat_Fecha_generacion__c</members>
+        <members>Quote.Mat_Tarifa__c</members>
+        <members>Quote.Mat_Tarifa_negociada__c</members>
+        <members>Quote.Mat_Descuento__c</members>
+        <members>QuoteLineItem.Mat_Nombre_servicio__c</members>
+        <members>QuoteLineItem.Mat_Servicio_de_oportunidad__c</members>
+        <members>QuoteLineItem.Mat_Tarifa__c</members>
+        <members>QuoteLineItem.Mat_Tarifa_negociada__c</members>
+        <members>QuoteLineItem.Mat_Descuento__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>Quote-Quote Layout</members>
+        <members>QuoteLineItem-Quote Line Item Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>Mat_Generar_Cotizacion</members>
+        <name>PermissionSet</name>
+    </types>
+    <types>
+        <members>Mat_Quote_SaveError</members>
+        <members>Mat_Quote_Generated</members>
+        <members>Mat_Quote_InactiveProduct</members>
+        <members>Mat_Quote_InvalidLine</members>
+        <members>Mat_Quote_InactivePricebook</members>
+        <name>CustomLabel</name>
+    </types>
+    <version>68.0</version>
+</Package>

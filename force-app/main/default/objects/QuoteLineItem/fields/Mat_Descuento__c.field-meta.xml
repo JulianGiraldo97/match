@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mat_Descuento__c</fullName>
+    <description
+  >Conserva el descuento original del servicio, incluyendo valores no disponibles.</description>
+    <inlineHelpText
+  >Valores guardados al generar la cotización. Consulta el registro de origen para ver los valores actuales.</inlineHelpText>
+    <label>Descuento cotizado</label>
+    <precision>18</precision>
+    <scale>2</scale>
+    <type>Percent</type>
+</CustomField>

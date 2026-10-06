@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Ver PDF y enviar</label>
+    <lightningComponent>MatQuotePreviewAndEmail</lightningComponent>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <type>LightningComponent</type>
+    <width>1000</width>
+    <height>800</height>
+</QuickAction>

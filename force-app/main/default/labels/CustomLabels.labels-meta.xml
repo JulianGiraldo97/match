@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Mat_Quote_InvalidOpportunity</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Match quote: InvalidOpportunity</shortDescription>
+        <value
+    >La oportunidad no está disponible o no tienes acceso a ella.</value>
+    </labels>
+    <labels>
+        <fullName>Mat_Quote_PermissionError</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Match quote: PermissionError</shortDescription>
+        <value
+    >No tienes los permisos necesarios para generar esta cotización. Solicita acceso al administrador.</value>
+    </labels>
+    <labels>
+        <fullName>Mat_Quote_NoServices</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Match quote: NoServices</shortDescription>
+        <value
+    >Agrega servicios a la oportunidad antes de generar la cotización</value>
+    </labels>
+    <labels>
+        <fullName>Mat_Quote_GenerationError</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Match quote: GenerationError</shortDescription>
+        <value
+    >No se pudo generar el PDF de la cotización. Intenta nuevamente.</value>
+    </labels>
+    <labels>
+        <fullName>Mat_Quote_SaveError</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Match quote: SaveError</shortDescription>
+        <value
+    >No se pudo crear la cotización o guardar su PDF. Revisa tus permisos e intenta nuevamente.</value>
+    </labels>
+    <labels>
+        <fullName>Mat_Quote_MissingValue</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Match quote: MissingValue</shortDescription>
+        <value>—</value>
+    </labels>
+    <labels>
+        <fullName>Mat_Quote_MissingService</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Match quote: MissingService</shortDescription>
+        <value>Servicio sin nombre</value>
+    </labels>
+    <labels>
+        <fullName>Mat_Quote_Generating</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Match quote: Generating</shortDescription>
+        <value>Generando cotización…</value>
+    </labels>
+    <labels>
+        <fullName>Mat_Quote_Generated</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Match quote: Generated</shortDescription>
+        <value
+    >Se creó la cotización con sus servicios y se guardó el PDF en Quote y en la oportunidad.</value>
+    </labels>
+    <labels>
+        <fullName>Mat_Quote_InactiveProduct</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Mat_Quote_InactiveProduct</shortDescription>
+        <value
+    >Activa los productos de los servicios antes de generar la cotización.</value>
+    </labels>
+    <labels>
+        <fullName>Mat_Quote_InvalidLine</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Mat_Quote_InvalidLine</shortDescription>
+        <value
+    >Revisa los servicios: las tarifas deben ser positivas o cero y los descuentos deben estar entre 0 y 100%.</value>
+    </labels>
+    <labels>
+        <fullName>Mat_Quote_InactivePricebook</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Mat_Quote_InactivePricebook</shortDescription>
+        <value
+    >Revisa la lista de precios y sus productos: deben estar activos y disponibles para generar la cotización.</value>
+    </labels>
+    <labels>
+        <fullName>Mat_Quote_PreviewError</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Match: PDF no disponible</shortDescription>
+        <value>No se pudo abrir el PDF guardado. Revisa el acceso a la cotización y vuelve a intentarlo.</value>
+    </labels>
+    <labels>
+        <fullName>Mat_Quote_EmailError</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Match: apertura de correo</shortDescription>
+        <value>No se pudo abrir el correo. Revisa que el email esté habilitado y que tengas permiso para enviarlo. El PDF sigue guardado en la cotización.</value>
+    </labels>
+    <labels>
+        <fullName>Mat_Quote_EmailSubject</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Match: asunto de cotización</shortDescription>
+        <value>Cotización Match</value>
+    </labels>
+</CustomLabels>

@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mat_Fecha_generacion__c</fullName>
+    <description
+  >Identifica cuándo se guardó esta versión de la cotización.</description>
+    <inlineHelpText
+  >Valores guardados al generar la cotización. Consulta el registro de origen para ver los valores actuales.</inlineHelpText>
+    <label>Fecha de generación</label>
+    <type>DateTime</type>
+</CustomField>

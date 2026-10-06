@@ -1,0 +1,12 @@
+<aura:component
+  implements="force:hasRecordId,force:lightningQuickActionWithoutHeader"
+  access="global"
+>
+  <lightning:quickActionAPI aura:id="emailActions" />
+  <c:matQuotePreview
+    aura:id="preview"
+    recordId="{!v.recordId}"
+    onsendquote="{!c.openEmail}"
+    onclosepreview="{!c.closePreview}"
+  />
+</aura:component>

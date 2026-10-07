@@ -11,6 +11,7 @@
         <members>MatQuoteCatalog</members>
         <members>MatQuoteRecordWriter</members>
         <members>MatQuoteRecordWriterTest</members>
+        <members>MatQuotePersistenceDiagnosticTest</members>
         <members>MatQuotePdfFileWriter</members>
         <name>ApexClass</name>
     </types>
@@ -84,5 +85,9 @@
         <members>MatQuotePreviewAndEmail</members>
         <name>AuraDefinitionBundle</name>
     </types>
-    <version>68.0</version>
+    <types>
+        <members>Quote_Record_Page</members>
+        <name>FlexiPage</name>
+    </types>
+    <version>67.0</version>
 </Package>

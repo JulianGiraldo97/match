@@ -140,6 +140,10 @@
           <td><apex:outputText value="{!opportunity.Name}" /></td>
         </tr>
         <tr>
+          <td class="label">Talento</td>
+          <td><apex:outputText value="{!talentName}" /></td>
+        </tr>
+        <tr>
           <td class="label">Fecha</td>
           <td><apex:outputText value="{!generatedOn}" /></td>
         </tr>

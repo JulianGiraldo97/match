@@ -24,6 +24,7 @@ public with sharing class MatQuoteData {
           Name,
           Pricebook2Id,
           Account.Name,
+          Mat_Talento__r.Name,
           Mat_Moneda__c,
           Condiciones_comerciales__c,
           Mat_Tarifa__c,

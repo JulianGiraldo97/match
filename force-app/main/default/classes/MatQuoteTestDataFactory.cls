@@ -27,7 +27,13 @@ public with sharing class MatQuoteTestDataFactory {
     }
     System.runAs(new User(Id = userId)) {
       Account client = new Account(Name = 'Cliente de prueba cotización');
-      insert as system client;
+      Account otherClient = new Account(
+        Name = 'Otro cliente de prueba cotización'
+      );
+      Account emptyClient = new Account(
+        Name = 'Cliente sin servicios de prueba cotización'
+      );
+      insert as system new List<Account>{ client, otherClient, emptyClient };
       Mat_Talentos__c talent = new Mat_Talentos__c(Name = 'Talento de prueba');
       insert as system talent;
       update as system new Pricebook2(
@@ -36,8 +42,8 @@ public with sharing class MatQuoteTestDataFactory {
       );
       List<Opportunity> opportunities = new List<Opportunity>{
         opportunity('Cotización principal', client.Id, talent.Id),
-        opportunity('Otra oportunidad', client.Id, talent.Id),
-        opportunity('Sin servicios', client.Id, talent.Id)
+        opportunity('Otra oportunidad', otherClient.Id, talent.Id),
+        opportunity('Sin servicios', emptyClient.Id, talent.Id)
       };
       insert as system opportunities;
       List<Product2> products = new List<Product2>{
@@ -86,7 +92,8 @@ public with sharing class MatQuoteTestDataFactory {
         Mat_Tarifa_negociada_moneda_extranjera__c,
         Condiciones_comerciales__c
       FROM Opportunity
-      WHERE Name = 'Cotización principal'
+      // Opportunity naming automation can replace Name; the fixture account is stable.
+      WHERE Account.Name = 'Cliente de prueba cotización'
       WITH SYSTEM_MODE
       LIMIT 1
     ];
@@ -97,7 +104,7 @@ public with sharing class MatQuoteTestDataFactory {
     return [
       SELECT Id
       FROM Opportunity
-      WHERE Name = 'Sin servicios'
+      WHERE Account.Name = 'Cliente sin servicios de prueba cotización'
       WITH SYSTEM_MODE
       LIMIT 1
     ];

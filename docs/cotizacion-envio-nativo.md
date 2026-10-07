@@ -1,6 +1,8 @@
 # PDF nativo de Quote y preparación del correo
 
-Desplegado en `matchdev` el 6 de octubre de 2026. La integración está implementada; la comprobación final del compositor de correo queda pendiente de habilitar el email del sandbox.
+Desplegado en `matchdev` el 6 de octubre de 2026 y en **matchprod el 7 de octubre**. El flujo completo de generación, vista previa y correo nativo está comprobado en producción: **un adjunto**, asunto **Cotización Match**, contexto de Quote y ningún mensaje enviado. En la consola, `matGenerateQuote` enfoca Quote con `openTab` antes de abrir la acción; `Quote_Record_Page` incluye las acciones dinámicas de PDF y correo. Informe vigente: `.sf/cotizacion/matchprod-20261007/report.md`.
+
+Las notas siguientes documentan la instalación y los bloqueos anteriores de sandbox; el cierre de la validación E2E corresponde a producción.
 
 ## Uso
 

@@ -172,6 +172,11 @@
         <field>Quote.Mat_Tarifa_negociada_moneda_extranjera__c</field>
         <readable>true</readable>
     </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.Mat_Talento__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <hasActivationRequired>false</hasActivationRequired>
     <label>Generar cotización Match</label>
     <objectPermissions>

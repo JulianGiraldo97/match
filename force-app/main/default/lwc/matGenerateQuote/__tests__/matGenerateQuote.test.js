@@ -2,6 +2,7 @@ import { createElement } from "lwc";
 import MatGenerateQuote from "c/matGenerateQuote";
 import generateQuote from "@salesforce/apex/MatQuoteService.generateQuoteForPreview";
 import { notifyRecordUpdateAvailable } from "lightning/uiRecordApi";
+import { IsConsoleNavigation, openTab } from "lightning/platformWorkspaceApi";
 const ShowToastEventName = "lightning__showtoast";
 import { RefreshEventName } from "lightning/refresh";
 import generationError from "@salesforce/label/c.Mat_Quote_GenerationError";
@@ -26,6 +27,7 @@ describe("Generate a Match quote", () => {
   beforeEach(() => {
     jest.spyOn(window, "open").mockImplementation(() => null);
     notifyRecordUpdateAvailable.mockResolvedValue();
+    openTab.mockResolvedValue("quote-tab");
   });
 
   afterEach(() => {
@@ -80,6 +82,22 @@ describe("Generate a Match quote", () => {
     await firstInvocation;
 
     expect(window.open).toHaveBeenCalledTimes(1);
+  });
+
+  it("focuses the generated Quote before opening preview in a console app", async () => {
+    generateQuote.mockResolvedValue({ quoteId: "0Q0000000000001AAA" });
+    const action = createAction();
+    IsConsoleNavigation.emit(true);
+    await Promise.resolve();
+
+    await action.invoke();
+
+    expect(openTab).toHaveBeenCalledWith({
+      recordId: "0Q0000000000001AAA", focus: true
+    });
+    expect(openTab.mock.invocationCallOrder[0]).toBeLessThan(
+      window.open.mock.invocationCallOrder[0]
+    );
   });
 
   it("shows the actionable Apex error and permits a new attempt", async () => {

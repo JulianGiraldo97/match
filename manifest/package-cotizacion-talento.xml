@@ -1,12 +1,11 @@
-<?xml version='1.0' encoding='UTF-8' ?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
         <members>MatQuoteData</members>
         <members>MatQuotePdfController</members>
-        <members>MatQuoteRecordWriter</members>
-        <members>MatQuoteTestDataFactory</members>
         <members>MatQuotePdfControllerTest</members>
-        <members>MatQuoteRecordWriterTest</members>
+        <members>MatQuoteTestDataFactory</members>
+        <members>MatQuoteServiceTest</members>
         <name>ApexClass</name>
     </types>
     <types>
@@ -14,17 +13,8 @@
         <name>ApexPage</name>
     </types>
     <types>
-        <members>Quote.Mat_Tarifa_moneda_extranjera__c</members>
-        <members>Quote.Mat_Tarifa_negociada_moneda_extranjera__c</members>
-        <name>CustomField</name>
-    </types>
-    <types>
         <members>Mat_Generar_Cotizacion</members>
         <name>PermissionSet</name>
-    </types>
-    <types>
-        <members>Quote-Quote Layout</members>
-        <name>Layout</name>
     </types>
     <version>67.0</version>
 </Package>

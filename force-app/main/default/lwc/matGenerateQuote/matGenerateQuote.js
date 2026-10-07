@@ -1,4 +1,5 @@
-import { api, LightningElement } from "lwc";
+import { api, LightningElement, wire } from "lwc";
+import { IsConsoleNavigation, openTab } from "lightning/platformWorkspaceApi";
 import { ShowToastEvent } from "lightning/platformShowToastEvent";
 import { notifyRecordUpdateAvailable } from "lightning/uiRecordApi";
 import { RefreshEvent } from "lightning/refresh";
@@ -10,6 +11,7 @@ import generationError from "@salesforce/label/c.Mat_Quote_GenerationError";
 export default class MatGenerateQuote extends LightningElement {
   @api recordId;
   isGenerating = false;
+  @wire(IsConsoleNavigation) isConsoleNavigation;
 
   @api
   async invoke() {
@@ -30,8 +32,11 @@ export default class MatGenerateQuote extends LightningElement {
       const quotePage = encodeURIComponent(
         `/lightning/r/Quote/${result.quoteId}/view`
       );
-      // The navigation service rewrites backgroundContext to Opportunity.
-      // A full navigation keeps Quote's publisher available to quickActionAPI.
+      // Console navigation otherwise keeps Opportunity as the active publisher.
+      // Focus the Quote workspace before opening its quick action.
+      if (this.isConsoleNavigation) {
+        await openTab({ recordId: result.quoteId, focus: true });
+      }
       window.open(
         `/lightning/action/quick/Quote.Mat_VerCotizacion?recordId=${quoteId}&backgroundContext=${quotePage}`,
         "_self"

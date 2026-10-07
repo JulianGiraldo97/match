@@ -27,7 +27,8 @@ private with sharing class MatQuoteServiceTest {
 
   @IsTest
   static void savesAndLinksThePdfAfterRendering() {
-    Id opportunityId = MatQuoteTestDataFactory.getPrimaryOpportunity().Id;
+    Opportunity opportunity = MatQuoteTestDataFactory.getPrimaryOpportunity();
+    Id opportunityId = opportunity.Id;
     Blob contents = Blob.valueOf('%PDF-1.4 synthetic test PDF');
     FakeRenderer fake = new FakeRenderer(contents, false);
     MatQuoteService.renderer = fake;
@@ -61,7 +62,7 @@ private with sharing class MatQuoteServiceTest {
       'Save with a PDF extension.'
     );
     Assert.isTrue(
-      version.Title.startsWith('Cotizacion_Cotización principal_'),
+      version.Title.startsWith('Cotizacion_' + opportunity.Name + '_'),
       'Name the file for the opportunity.'
     );
     Assert.areEqual(

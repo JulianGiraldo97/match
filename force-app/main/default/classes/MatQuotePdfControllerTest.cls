@@ -59,7 +59,59 @@ private with sharing class MatQuotePdfControllerTest {
       controller.opportunity.Mat_Moneda__c,
       'Use the selected currency without conversion.'
     );
+    Assert.areEqual(
+      'Talento de prueba',
+      controller.talentName,
+      'Display the opportunity talent in the header.'
+    );
     Assert.isNotNull(controller.generatedOn, 'Include a generation date.');
+  }
+
+  @IsTest
+  static void usesTheOpportunityTalentIndependentlyOfServiceTalent() {
+    Opportunity opportunity = MatQuoteTestDataFactory.getPrimaryOpportunity();
+    Mat_Talentos__c selectedTalent = new Mat_Talentos__c(
+      Name = 'Talento seleccionado en oportunidad'
+    );
+    insert as system selectedTalent;
+    update as system new Opportunity(
+      Id = opportunity.Id,
+      Mat_Talento__c = selectedTalent.Id
+    );
+    Test.startTest();
+    MatQuotePdfController controller = new MatQuotePdfController(
+      new ApexPages.StandardController(opportunity)
+    );
+    Test.stopTest();
+    Assert.areEqual(
+      selectedTalent.Name,
+      controller.talentName,
+      'Read the opportunity lookup rather than inferring talent from services.'
+    );
+    Assert.areEqual(
+      'Activación & contenido',
+      controller.rows[0].name,
+      'Keep the service names unchanged.'
+    );
+  }
+
+  @IsTest
+  static void displaysDashWhenOpportunityHasNoTalent() {
+    Opportunity opportunity = MatQuoteTestDataFactory.getPrimaryOpportunity();
+    update as system new Opportunity(
+      Id = opportunity.Id,
+      Mat_Talento__c = null
+    );
+    Test.startTest();
+    MatQuotePdfController controller = new MatQuotePdfController(
+      new ApexPages.StandardController(opportunity)
+    );
+    Test.stopTest();
+    Assert.areEqual(
+      Label.Mat_Quote_MissingValue,
+      controller.talentName,
+      'An unassigned talent must not prevent quote generation.'
+    );
   }
 
   @IsTest

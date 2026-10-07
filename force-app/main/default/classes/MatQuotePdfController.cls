@@ -3,6 +3,7 @@ public with sharing class MatQuotePdfController {
   public Opportunity opportunity { get; private set; }
   public List<ServiceRow> rows { get; private set; }
   public String clientName { get; private set; }
+  public String talentName { get; private set; }
   public String generatedOn { get; private set; }
   public String totalRate { get; private set; }
   public String negotiatedRate { get; private set; }
@@ -21,6 +22,8 @@ public with sharing class MatQuotePdfController {
     MatQuoteData data = MatQuoteData.load(controller.getId());
     opportunity = data.opportunity;
     clientName = opportunity.Account?.Name ?? Label.Mat_Quote_MissingValue;
+    talentName = opportunity.Mat_Talento__r?.Name ??
+      Label.Mat_Quote_MissingValue;
     generatedOn = Datetime.now()
       .format('dd/MM/yyyy HH:mm', UserInfo.getTimeZone().getID());
     totalRate = formatAmount(opportunity.Mat_Tarifa__c);

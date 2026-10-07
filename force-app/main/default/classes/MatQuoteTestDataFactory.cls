@@ -82,6 +82,8 @@ public with sharing class MatQuoteTestDataFactory {
         Mat_Tarifa__c,
         Mat_Tarifa_negociada__c,
         Mat_Descuento__c,
+        Mat_Tarifa_moneda_extranjera__c,
+        Mat_Tarifa_negociada_moneda_extranjera__c,
         Condiciones_comerciales__c
       FROM Opportunity
       WHERE Name = 'Cotización principal'

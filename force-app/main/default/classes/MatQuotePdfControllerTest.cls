@@ -63,6 +63,92 @@ private with sharing class MatQuotePdfControllerTest {
   }
 
   @IsTest
+  static void distinguishesBaseAndQuotedCurrency() {
+    Opportunity opportunity = MatQuoteTestDataFactory.getPrimaryOpportunity();
+    update as system new Opportunity(
+      Id = opportunity.Id,
+      Mat_Moneda__c = 'USD'
+    );
+    // Existing currency automation sets the initial rate; then save the test rate.
+    update as system new Opportunity(
+      Id = opportunity.Id,
+      Mat_Tasa_de_cambio__c = 4000
+    );
+    Test.startTest();
+    MatQuotePdfController controller = new MatQuotePdfController(
+      new ApexPages.StandardController(opportunity)
+    );
+    Test.stopTest();
+    Assert.areEqual('COP', controller.baseCurrency, 'Base tariffs are in COP.');
+    Assert.isTrue(
+      controller.hasForeignCurrency,
+      'Show the quoted foreign currency.'
+    );
+    Assert.areEqual(
+      '88',
+      controller.foreignRate,
+      'Use the source field precision.'
+    );
+    Assert.areEqual(
+      '73',
+      controller.foreignNegotiatedRate,
+      'Use the negotiated foreign formula.'
+    );
+    Assert.areEqual(
+      '350.000',
+      controller.totalRate,
+      'Keep the base tariff unchanged.'
+    );
+  }
+
+  @IsTest
+  static void omitsForeignSectionForBaseCurrency() {
+    Opportunity opportunity = MatQuoteTestDataFactory.getPrimaryOpportunity();
+    Test.startTest();
+    MatQuotePdfController controller = new MatQuotePdfController(
+      new ApexPages.StandardController(opportunity)
+    );
+    Test.stopTest();
+    Assert.isFalse(
+      controller.hasForeignCurrency,
+      'Avoid duplicate COP totals.'
+    );
+  }
+
+  @IsTest
+  static void showsUnavailableForeignValuesAsDash() {
+    Opportunity opportunity = MatQuoteTestDataFactory.getPrimaryOpportunity();
+    update as system new Opportunity(
+      Id = opportunity.Id,
+      Mat_Moneda__c = 'EUR'
+    );
+    // Existing currency automation sets the initial rate; then save the test rate.
+    update as system new Opportunity(
+      Id = opportunity.Id,
+      Mat_Tasa_de_cambio__c = null
+    );
+    Test.startTest();
+    MatQuotePdfController controller = new MatQuotePdfController(
+      new ApexPages.StandardController(opportunity)
+    );
+    Test.stopTest();
+    Assert.isTrue(
+      controller.hasForeignCurrency,
+      'Keep the selected currency visible.'
+    );
+    Assert.areEqual(
+      '—',
+      controller.foreignRate,
+      'Do not replace unavailable conversion with zero.'
+    );
+    Assert.areEqual(
+      '—',
+      controller.foreignNegotiatedRate,
+      'Handle unavailable negotiated conversion.'
+    );
+  }
+
+  @IsTest
   static void preservesRowsWithMissingReferencesAndAmounts() {
     Test.startTest();
     MatQuotePdfController.ServiceRow row = new MatQuotePdfController.ServiceRow(

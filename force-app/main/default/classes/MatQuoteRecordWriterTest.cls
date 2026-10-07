@@ -34,6 +34,11 @@ private with sharing class MatQuoteRecordWriterTest {
         Mat_Cliente__c,
         Mat_Nombre_oportunidad__c,
         Mat_Fecha_generacion__c,
+        Subtotal,
+        TotalPrice,
+        Discount,
+        Mat_Tarifa_moneda_extranjera__c,
+        Mat_Tarifa_negociada_moneda_extranjera__c,
         Mat_Tarifa__c,
         Mat_Tarifa_negociada__c,
         Mat_Descuento__c,
@@ -98,18 +103,18 @@ private with sharing class MatQuoteRecordWriterTest {
     );
     Assert.areEqual(
       opportunity.Mat_Tarifa__c,
-      quote.Mat_Tarifa__c,
-      'Copy the saved total.'
+      quote.Subtotal,
+      'Standard subtotal uses the service tariffs.'
     );
     Assert.areEqual(
       opportunity.Mat_Tarifa_negociada__c,
-      quote.Mat_Tarifa_negociada__c,
-      'Copy the saved negotiated total.'
+      quote.TotalPrice,
+      'Standard total uses each line discount.'
     );
     Assert.areEqual(
-      opportunity.Mat_Descuento__c,
-      quote.Mat_Descuento__c,
-      'Copy the saved opportunity discount.'
+      opportunity.Mat_Descuento__c.setScale(2, RoundingMode.HALF_UP),
+      quote.Discount.setScale(2, RoundingMode.HALF_UP),
+      'Standard discount reflects the weighted line discounts.'
     );
     Assert.isNotNull(
       quote.Mat_Fecha_generacion__c,
@@ -118,6 +123,96 @@ private with sharing class MatQuoteRecordWriterTest {
     Assert.isFalse(
       quote.IsSyncing,
       'Do not synchronize changes back to the opportunity.'
+    );
+  }
+
+  @IsTest
+  static void leavesLegacyQuoteTotalsUnused() {
+    Opportunity opportunity = MatQuoteTestDataFactory.getPrimaryOpportunity();
+    generate(opportunity.Id);
+    Quote quote = getQuote(opportunity.Id);
+    Assert.isNull(quote.Mat_Tarifa__c, 'Do not populate the legacy tariff.');
+    Assert.isNull(
+      quote.Mat_Tarifa_negociada__c,
+      'Do not populate the legacy total.'
+    );
+    Assert.isNull(
+      quote.Mat_Descuento__c,
+      'Do not populate the legacy discount.'
+    );
+  }
+
+  @IsTest
+  static void snapshotsForeignCurrencyValues() {
+    Opportunity opportunity = MatQuoteTestDataFactory.getPrimaryOpportunity();
+    update as system new Opportunity(
+      Id = opportunity.Id,
+      Mat_Moneda__c = 'USD'
+    );
+    // Existing currency automation sets the initial rate; then save the test rate.
+    update as system new Opportunity(
+      Id = opportunity.Id,
+      Mat_Tasa_de_cambio__c = 4000
+    );
+    opportunity = MatQuoteTestDataFactory.getPrimaryOpportunity();
+    generate(opportunity.Id);
+    Quote quote = getQuote(opportunity.Id);
+    Assert.areEqual('USD', quote.Mat_Moneda__c, 'Keep the quoted currency.');
+    Assert.areEqual(
+      opportunity.Mat_Tarifa_moneda_extranjera__c
+        ?.setScale(0, RoundingMode.HALF_UP),
+      quote.Mat_Tarifa_moneda_extranjera__c,
+      'Copy the saved formula result.'
+    );
+    Assert.areEqual(
+      opportunity.Mat_Tarifa_negociada_moneda_extranjera__c
+        ?.setScale(0, RoundingMode.HALF_UP),
+      quote.Mat_Tarifa_negociada_moneda_extranjera__c,
+      'Copy the negotiated foreign tariff.'
+    );
+    update as system new Opportunity(
+      Id = opportunity.Id,
+      Mat_Tasa_de_cambio__c = 5000
+    );
+    Quote saved = getQuote(opportunity.Id);
+    Assert.areEqual(
+      quote.Mat_Tarifa_moneda_extranjera__c,
+      saved.Mat_Tarifa_moneda_extranjera__c,
+      'Keep the historical exchange result.'
+    );
+    Assert.areEqual(
+      quote.Mat_Tarifa_negociada_moneda_extranjera__c,
+      saved.Mat_Tarifa_negociada_moneda_extranjera__c,
+      'Keep the historical negotiated result.'
+    );
+  }
+
+  @IsTest
+  static void preservesUnavailableForeignAmounts() {
+    Opportunity opportunity = MatQuoteTestDataFactory.getPrimaryOpportunity();
+    update as system new Opportunity(
+      Id = opportunity.Id,
+      Mat_Moneda__c = 'EUR'
+    );
+    // Existing currency automation sets the initial rate; then save the test rate.
+    update as system new Opportunity(
+      Id = opportunity.Id,
+      Mat_Tasa_de_cambio__c = null
+    );
+    opportunity = MatQuoteTestDataFactory.getPrimaryOpportunity();
+    generate(opportunity.Id);
+    Quote quote = getQuote(opportunity.Id);
+    Assert.areEqual(
+      opportunity.Mat_Tarifa_moneda_extranjera__c
+        ?.setScale(0, RoundingMode.HALF_UP),
+      quote.Mat_Tarifa_moneda_extranjera__c,
+      'Do not manufacture a converted rate.'
+    );
+    Assert.areEqual(
+      opportunity.Mat_Tarifa_negociada_moneda_extranjera__c
+        ?.setScale(0, RoundingMode.HALF_UP),
+      quote.Mat_Tarifa_negociada_moneda_extranjera__c,
+      'Preserve the formula result without conversion.'
     );
   }
 
@@ -202,8 +297,8 @@ private with sharing class MatQuoteRecordWriterTest {
       'Keep historical line pricing.'
     );
     Assert.areEqual(
-      quote.Mat_Tarifa__c,
-      savedQuote.Mat_Tarifa__c,
+      quote.Subtotal,
+      savedQuote.Subtotal,
       'Keep the historical summary.'
     );
   }

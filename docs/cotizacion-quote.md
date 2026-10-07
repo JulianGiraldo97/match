@@ -1,23 +1,25 @@
 # Registros estándar de Quote
 
+Actualización de monedas y totales estándar: [Tarifas en moneda extranjera](cotizacion-monedas.md). El contenido de implementación siguiente documenta la entrega inicial del 5 de octubre.
+
 Actualización del 6 de octubre: [PDF nativo de Quote y preparación del correo](cotizacion-envio-nativo.md).
 
 Actualización desplegada en `matchdev` el 5 de octubre de 2026. **Generar cotización** ahora crea un Quote y sus líneas estándar, además del PDF. La lista relacionada de Quote añadida por el usuario permite abrir cada generación.
 
 ## Información guardada
 
-| Registro | Campo | Contenido |
-| --- | --- | --- |
-| Quote | `OpportunityId`, `AccountId` | Oportunidad y cliente relacionados; AccountId lo deriva Salesforce |
-| Quote | `Mat_Cliente__c`, `Mat_Nombre_oportunidad__c` | Nombres guardados al generar, para conservar el historial |
-| Quote | `Mat_Moneda__c`, `Mat_Fecha_generacion__c` | Moneda comercial y fecha de generación |
-| Quote | `Mat_Tarifa__c`, `Mat_Tarifa_negociada__c`, `Mat_Descuento__c` | Valores copiados directamente de oportunidad, sin recalcular |
-| Quote | `Description` | Condiciones comerciales con sus saltos de línea |
-| QuoteLineItem | `QuoteId`, `PricebookEntryId`, `Quantity`, `SortOrder` | Línea estándar, cantidad 1 por registro de servicio y orden del PDF |
-| QuoteLineItem | `UnitPrice`, `Discount` | Tarifa y descuento del servicio de oportunidad |
+| Registro      | Campo                                                          | Contenido                                                                              |
+| ------------- | -------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| Quote         | `OpportunityId`, `AccountId`                                   | Oportunidad y cliente relacionados; AccountId lo deriva Salesforce                     |
+| Quote         | `Mat_Cliente__c`, `Mat_Nombre_oportunidad__c`                  | Nombres guardados al generar, para conservar el historial                              |
+| Quote         | `Mat_Moneda__c`, `Mat_Fecha_generacion__c`                     | Moneda comercial y fecha de generación                                                 |
+| Quote         | `Mat_Tarifa__c`, `Mat_Tarifa_negociada__c`, `Mat_Descuento__c` | Valores copiados directamente de oportunidad, sin recalcular                           |
+| Quote         | `Description`                                                  | Condiciones comerciales con sus saltos de línea                                        |
+| QuoteLineItem | `QuoteId`, `PricebookEntryId`, `Quantity`, `SortOrder`         | Línea estándar, cantidad 1 por registro de servicio y orden del PDF                    |
+| QuoteLineItem | `UnitPrice`, `Discount`                                        | Tarifa y descuento del servicio de oportunidad                                         |
 | QuoteLineItem | `Mat_Tarifa__c`, `Mat_Tarifa_negociada__c`, `Mat_Descuento__c` | Valores originales guardados, sin depender de cálculos estándar ni cambios posteriores |
-| QuoteLineItem | `Mat_Nombre_servicio__c` | Nombre del producto en el momento de generar; sin talento |
-| QuoteLineItem | `Mat_Servicio_de_oportunidad__c` | Registro de servicio que originó esa fila |
+| QuoteLineItem | `Mat_Nombre_servicio__c`                                       | Nombre del producto en el momento de generar; sin talento                              |
+| QuoteLineItem | `Mat_Servicio_de_oportunidad__c`                               | Registro de servicio que originó esa fila                                              |
 
 Los dos campos de tarifa existentes en Quote se ampliaron a precisión 18 para admitir los mismos importes que el origen. Las filas repetidas se mantienen separadas. Quote queda en **Draft** y no se sincroniza con oportunidad; generar otra versión conserva la anterior. Las fórmulas y valores de oportunidad no cambian.
 

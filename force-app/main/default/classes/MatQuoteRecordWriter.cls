@@ -40,9 +40,9 @@ public with sharing class MatQuoteRecordWriter {
       Mat_Cliente__c = data.opportunity.Account?.Name,
       Mat_Nombre_oportunidad__c = data.opportunity.Name,
       Mat_Fecha_generacion__c = Datetime.now(),
-      Mat_Tarifa__c = data.opportunity.Mat_Tarifa__c,
-      Mat_Tarifa_negociada__c = data.opportunity.Mat_Tarifa_negociada__c,
-      Mat_Descuento__c = data.opportunity.Mat_Descuento__c
+      // Native Subtotal, TotalPrice and Discount are calculated from the lines.
+      Mat_Tarifa_moneda_extranjera__c = data.opportunity.Mat_Tarifa_moneda_extranjera__c,
+      Mat_Tarifa_negociada_moneda_extranjera__c = data.opportunity.Mat_Tarifa_negociada_moneda_extranjera__c
     );
     insert as user quote;
     List<QuoteLineItem> lines = new List<QuoteLineItem>();

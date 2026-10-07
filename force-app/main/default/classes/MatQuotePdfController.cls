@@ -8,6 +8,10 @@ public with sharing class MatQuotePdfController {
   public String negotiatedRate { get; private set; }
   public String discount { get; private set; }
   public Boolean hasConditions { get; private set; }
+  public String baseCurrency { get; private set; }
+  public Boolean hasForeignCurrency { get; private set; }
+  public String foreignRate { get; private set; }
+  public String foreignNegotiatedRate { get; private set; }
 
   /**
    * Loads the current opportunity and prepares Spanish display values.
@@ -23,6 +27,14 @@ public with sharing class MatQuotePdfController {
     negotiatedRate = formatAmount(opportunity.Mat_Tarifa_negociada__c);
     discount = formatPercent(opportunity.Mat_Descuento__c);
     hasConditions = String.isNotBlank(opportunity.Condiciones_comerciales__c);
+    baseCurrency = UserInfo.getDefaultCurrency();
+    hasForeignCurrency =
+      String.isNotBlank(opportunity.Mat_Moneda__c) &&
+      opportunity.Mat_Moneda__c != baseCurrency;
+    foreignRate = formatAmount(opportunity.Mat_Tarifa_moneda_extranjera__c);
+    foreignNegotiatedRate = formatAmount(
+      opportunity.Mat_Tarifa_negociada_moneda_extranjera__c
+    );
     rows = new List<ServiceRow>();
     for (Mat_Servicios_de_oportunidad__c service : data.services) {
       rows.add(new ServiceRow(service));
@@ -47,7 +59,10 @@ public with sharing class MatQuotePdfController {
     if (value == null) {
       return Label.Mat_Quote_MissingValue;
     }
-    List<String> parts = String.valueOf(value.setScale(scale)).split('\\.');
+    List<String> parts = String.valueOf(
+        value.setScale(scale, RoundingMode.HALF_UP)
+      )
+      .split('\\.');
     String result = parts[0].replaceAll('(\\d)(?=(\\d{3})+(?!\\d))', '$1.');
     return scale == 0 ? result : result + ',' + parts[1];
   }

@@ -2,11 +2,11 @@
 
 Creados en el sandbox `matchdev` el 5 de octubre de 2026. Permanecen disponibles para pruebas manuales. Todos los registros son ficticios y llevan el prefijo `TEST -`.
 
-| Caso | Servicios | Tarifa total COP | Tarifa negociada COP | Descuento | Abrir |
-| --- | ---: | ---: | ---: | ---: | --- |
-| Básica | 5 | 6.000.000 | 5.070.000 | 15,50 % | [Oportunidad](https://matchdev--sandboxv01.sandbox.lightning.force.com/lightning/r/Opportunity/006WI00000RbuLRYAZ/view) |
-| Multipágina | 65 | 8.580.000 | 7.309.600 | 14,81 % | [Oportunidad](https://matchdev--sandboxv01.sandbox.lightning.force.com/lightning/r/Opportunity/006WI00000RbuLSYAZ/view) |
-| Sin servicios | 0 | 0 | 0 | Sin valor | [Oportunidad](https://matchdev--sandboxv01.sandbox.lightning.force.com/lightning/r/Opportunity/006WI00000RbuLTYAZ/view) |
+| Caso          | Servicios | Tarifa total COP | Tarifa negociada COP | Descuento | Abrir                                                                                                                   |
+| ------------- | --------: | ---------------: | -------------------: | --------: | ----------------------------------------------------------------------------------------------------------------------- |
+| Básica        |         5 |        6.000.000 |            5.070.000 |   15,50 % | [Oportunidad](https://matchdev--sandboxv01.sandbox.lightning.force.com/lightning/r/Opportunity/006WI00000RbuLRYAZ/view) |
+| Multipágina   |        65 |        8.580.000 |            7.309.600 |   14,81 % | [Oportunidad](https://matchdev--sandboxv01.sandbox.lightning.force.com/lightning/r/Opportunity/006WI00000RbuLSYAZ/view) |
+| Sin servicios |         0 |                0 |                    0 | Sin valor | [Oportunidad](https://matchdev--sandboxv01.sandbox.lightning.force.com/lightning/r/Opportunity/006WI00000RbuLTYAZ/view) |
 
 La básica contiene dos filas del producto **TEST - Reel para redes sociales** con tarifas y descuentos distintos. Los descuentos por fila son 0 %, 10 %, 15 %, 20 % y 25 %. La multipágina incluye productos repetidos, nombres largos y descuentos de 0 %, 10 %, 20 % y 30 %. Ambas incluyen condiciones comerciales con saltos de línea.
 
@@ -33,3 +33,11 @@ Se conservaron [Quote 00000005](https://matchdev--sandboxv01.sandbox.lightning.f
 No se enviaron correos. `matchdev` está restringido a **Solamente emails del sistema**; la prueba del compositor requiere autorización para cambiar globalmente a **Todos los emails**. [Detalle y validación](cotizacion-envio-nativo.md).
 
 El script de limpieza también contempla archivos vinculados solamente a los Quotes de prueba, incluida la prueba nativa conservada en Quote 00000001. Sigue sin ejecutarse.
+
+## Pruebas de monedas — 6 de octubre
+
+Se creó una [oportunidad ficticia USD](https://matchdev--sandboxv01.sandbox.lightning.force.com/lightning/r/Opportunity/006WI00000ReUhNYAV/view) con dos servicios: 50.000.000 COP de tarifa, 40.000.000 COP negociados, descuento 20 % y tasa 3.196,2. Sus fórmulas producen 15.644 USD y 12.515 USD. [Quote 00000012](https://matchdev--sandboxv01.sandbox.lightning.force.com/lightning/r/Quote/0Q0WI000004slsT0AQ/view) conserva esos valores y el PDF validado.
+
+También se generó [Quote 00000013 COP](https://matchdev--sandboxv01.sandbox.lightning.force.com/lightning/r/Quote/0Q0WI000004slu50AA/view) sobre el fixture básico existente. Los registros anteriores se conservaron. [Detalle de la ampliación](cotizacion-monedas.md).
+
+IDs: `docs/datos-prueba-cotizacion-monedas-20261006.json`. La limpieza de 20261005 no incluye la nueva oportunidad USD: al terminar las pruebas, eliminar manualmente únicamente su Quote/archivo, sus dos servicios y esa oportunidad. Cuenta, talento y productos son compartidos con los fixtures anteriores. No se ejecutó limpieza.

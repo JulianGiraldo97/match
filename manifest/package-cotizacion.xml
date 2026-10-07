@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
         <members>MatQuoteData</members>
@@ -73,6 +73,11 @@
         <members>QuoteLineItem.Mat_Tarifa__c</members>
         <members>QuoteLineItem.Mat_Tarifa_negociada__c</members>
         <members>QuoteLineItem.Mat_Descuento__c</members>
+        <members>Opportunity.Mat_Tarifa_moneda_extranjera__c</members>
+        <members>Opportunity.Mat_Tarifa_negociada_moneda_extranjera__c</members>
+        <members>Opportunity.Mat_Tasa_de_cambio__c</members>
+        <members>Quote.Mat_Tarifa_moneda_extranjera__c</members>
+        <members>Quote.Mat_Tarifa_negociada_moneda_extranjera__c</members>
         <name>CustomField</name>
     </types>
     <types>

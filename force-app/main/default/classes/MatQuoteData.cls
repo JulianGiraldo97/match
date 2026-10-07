@@ -28,7 +28,9 @@ public with sharing class MatQuoteData {
           Condiciones_comerciales__c,
           Mat_Tarifa__c,
           Mat_Tarifa_negociada__c,
-          Mat_Descuento__c
+          Mat_Descuento__c,
+          Mat_Tarifa_moneda_extranjera__c,
+          Mat_Tarifa_negociada_moneda_extranjera__c
         FROM Opportunity
         WHERE Id = :opportunityId
         WITH USER_MODE

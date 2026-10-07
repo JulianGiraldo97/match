@@ -153,15 +153,11 @@
           <tr>
             <th style="width: 40%">Servicio</th>
             <th class="number" style="width: 20%">
-              Tarifa<br /><apex:outputText
-                value="{!opportunity.Mat_Moneda__c}"
-              />
+              Tarifa<br /><apex:outputText value="{!baseCurrency}" />
             </th>
             <th class="number" style="width: 15%">Descuento (%)</th>
             <th class="number" style="width: 25%">
-              Tarifa negociada<br /><apex:outputText
-                value="{!opportunity.Mat_Moneda__c}"
-              />
+              Tarifa negociada<br /><apex:outputText value="{!baseCurrency}" />
             </th>
           </tr>
         </thead>
@@ -187,7 +183,7 @@
           <td class="value">
             <apex:outputText value="{0} {1}">
               <apex:param value="{!totalRate}" />
-              <apex:param value="{!opportunity.Mat_Moneda__c}" />
+              <apex:param value="{!baseCurrency}" />
             </apex:outputText>
           </td>
         </tr>
@@ -200,11 +196,33 @@
           <td class="value">
             <apex:outputText value="{0} {1}">
               <apex:param value="{!negotiatedRate}" />
-              <apex:param value="{!opportunity.Mat_Moneda__c}" />
+              <apex:param value="{!baseCurrency}" />
             </apex:outputText>
           </td>
         </tr>
       </table>
+      <apex:outputPanel layout="block" rendered="{!hasForeignCurrency}">
+        <table class="summary">
+          <tr>
+            <td>Tarifa moneda extranjera</td>
+            <td class="value">
+              <apex:outputText value="{0} {1}">
+                <apex:param value="{!foreignRate}" />
+                <apex:param value="{!opportunity.Mat_Moneda__c}" />
+              </apex:outputText>
+            </td>
+          </tr>
+          <tr class="total">
+            <td>Tarifa negociada moneda extranjera</td>
+            <td class="value">
+              <apex:outputText value="{0} {1}">
+                <apex:param value="{!foreignNegotiatedRate}" />
+                <apex:param value="{!opportunity.Mat_Moneda__c}" />
+              </apex:outputText>
+            </td>
+          </tr>
+        </table>
+      </apex:outputPanel>
       <apex:outputPanel
         layout="block"
         styleClass="conditions"
